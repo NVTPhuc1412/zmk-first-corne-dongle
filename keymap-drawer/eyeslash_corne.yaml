@@ -110,8 +110,8 @@ layers:
   - +
   - (
   - )
-  - '|'
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - PRINTSCREEN
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
   - '&'
