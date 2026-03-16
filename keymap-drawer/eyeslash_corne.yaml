@@ -6,7 +6,7 @@ layers:
   - W
   - F
   - P
-  - G
+  - B
   - $$mdi:arrow-up-bold$$
   - J
   - L
@@ -19,11 +19,11 @@ layers:
   - R
   - S
   - T
-  - D
+  - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - H
+  - M
   - N
   - E
   - I
@@ -33,12 +33,12 @@ layers:
   - Z
   - X
   - C
+  - D
   - V
-  - B
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - K
-  - M
+  - H
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
