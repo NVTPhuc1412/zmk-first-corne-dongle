@@ -60,8 +60,8 @@ layers:
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:volume-off$$
+  - PRINTSCREEN
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - '6'
@@ -72,26 +72,26 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - RGB ON
+  - RGB TOG
   - RGB EFF
   - RGB BRI
-  - RGB COLOR HSB(0,0,100)
-  - RGB HUI
-  - RGB SAI
+  - $$mdi:volume-high$$
+  - PG UP
+  - HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '0', s: )}
+  - {t: '`', s: '~'}
   - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - RGB OFF
+  - RGB COLOR HSB(0,0,100)
   - RGB EFR
   - RGB BRD
-  - RGB COLOR HSB(0,100,50)
-  - RGB HUD
-  - RGB SAD
+  - $$mdi:volume-low$$
+  - PG DN
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -148,19 +148,19 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - '&studio_unlock'
   - F1
   - F2
   - F3
   - F4
   - F5
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F7
   - F8
   - F9
   - F10
   - F11
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - $$mdi:mouse-left-click-outline$$
@@ -180,7 +180,7 @@ layers:
   - OUT BLE
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&studio_unlock'
   - '&mkp MB5'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
