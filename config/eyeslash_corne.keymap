@@ -92,10 +92,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &sys_reset  &bootloader      &studio_unlock   &out OUT_BLE  &out OUT_USB                               &mmv MOVE_UP                     &none                           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &bootloader      &sys_reset       &none
-&trans  &kp F1      &kp F2           &kp F3           &kp F4        &kp F5                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6                          &kp F7           &kp F8           &kp F9           &kp F10          &kp SCROLLLOCK
-&trans  &none       &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp F11       &rgb_ug RGB_TOG  &trans                    &mmv MOVE_DOWN                   &rgb_ug RGB_COLOR_HSB(0,0,100)  &kp F12          &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp PAUSE_BREAK  &none
-                                     &trans           &trans        &trans                                                                      &trans                          &trans           &trans
+&trans  &sys_reset  &bootloader      &studio_unlock   &out OUT_BLE  &out OUT_USB                              &mmv MOVE_UP                     &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &bootloader      &sys_reset       &none
+&trans  &kp F1      &kp F2           &kp F3           &kp F4        &kp F5                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6                          &kp F7           &kp F8           &kp F9           &kp F10          &kp SCROLLLOCK
+&trans  &none       &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp F11       &rgb_ug RGB_ON  &trans                    &mmv MOVE_DOWN                   &rgb_ug RGB_OFF                 &kp F12          &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp PAUSE_BREAK  &none
+                                     &trans           &trans        &trans                                                                     &trans                          &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
