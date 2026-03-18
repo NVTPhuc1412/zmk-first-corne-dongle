@@ -156,8 +156,8 @@ layers:
   - OUT USB
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB SPI
+  - RGB SPD
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -177,19 +177,19 @@ layers:
   - F10
   - SCROLLLOCK
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB COLOR HSB(0,0,100)
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB EFR
   - RGB EFF
-  - RGB TOG
   - F11
+  - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - RGB COLOR HSB(0,0,100)
   - F12
   - RGB BRI
   - RGB BRD
-  - RGB SPI
-  - RGB SPD
   - PAUSE BREAK
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
