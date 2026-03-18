@@ -155,7 +155,7 @@ layers:
   - OUT BLE
   - OUT USB
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB COLOR HSB(0,0,100)
   - RGB SPI
   - RGB SPD
   - $$mdi:progress-download$$
@@ -181,10 +181,10 @@ layers:
   - RGB EFR
   - RGB EFF
   - F11
-  - RGB TOG
+  - RGB ON
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - RGB COLOR HSB(0,0,100)
+  - RGB OFF
   - F12
   - RGB BRI
   - RGB BRD
