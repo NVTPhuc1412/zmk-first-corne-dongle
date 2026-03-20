@@ -31,6 +31,7 @@
 
 &left_encoder {
     status = "okay";
+    steps = <40>;
 };
 
 &pinctrl {
