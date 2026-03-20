@@ -110,7 +110,7 @@
             sensor-bindings = <&rgb_encoder>;
         };
 
-        QWERTY {
+        layer_4 {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                                &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
 &td0       &kp A  &kp S  &kp D     &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
@@ -119,6 +119,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "QWERTY";
         };
     };
 };
