@@ -119,7 +119,7 @@
                                      &trans           &trans        &trans                                                                     &trans           &trans           &trans
             >;
 
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&inc_dec_kp U D>;
         };
     };
 };
