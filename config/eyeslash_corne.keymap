@@ -32,7 +32,7 @@
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
-    
+
     behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -95,10 +95,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1        &kp N2  &kp N3    &kp N4     &kp N5                                   &mmv MOVE_UP                     &kp C_MUTE     &mkp MB4   &kp UP     &mkp MB5   &kp PRINTSCREEN  &kp BSPC
-&trans  &kp NUMBER_6  &kp N7  &kp N8    &kp N9     &kp N0                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_BRI_UP   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_UP        &kp HOME
-&trans  &kp LEFT      &kp UP  &kp DOWN  &kp RIGHT  &kp GRAVE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_BRI_DEC  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp PAGE_DOWN    &kp END
-                              &trans    &trans     &trans                                                                    &kp DELETE     &kp INS    &trans
+&trans  &kp N1        &kp N2  &kp N3    &kp N4   &kp N5                                &mmv MOVE_UP                     &kp C_MUTE     &mkp MB4   &kp UP     &mkp MB5   &kp PRINTSCREEN  &kp BSPC
+&trans  &kp NUMBER_6  &kp N7  &kp N8    &kp N9   &kp N0                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_BRI_UP   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_UP        &kp HOME
+&trans  &kp LCTRL     &none   &kp HOME  &kp END  &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_BRI_DEC  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp PAGE_DOWN    &kp END
+                              &trans    &trans   &trans                                                                 &kp DELETE     &kp INS    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
