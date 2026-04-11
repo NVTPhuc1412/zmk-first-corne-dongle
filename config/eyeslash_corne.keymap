@@ -98,7 +98,7 @@
 &trans  &none   &none   &none   &kp NUMBER_0  &none                                 &mmv MOVE_UP                     &kp C_MUTE     &mkp MB4   &kp UP     &mkp MB5   &kp PRINTSCREEN  &kp BSPC
 &trans  &kp N1  &kp N2  &kp N3  &kp N4        &kp N5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_BRI_UP   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_UP        &kp HOME
 &trans  &kp N6  &kp N7  &kp N8  &kp N9        &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_BRI_DEC  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp PAGE_DOWN    &kp END
-                        &trans  &trans        &trans                                                                 &kp DELETE     &kp INS    &trans
+                        &trans  &trans        &trans                                                                 &trans         &kp INS    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
