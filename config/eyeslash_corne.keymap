@@ -71,10 +71,10 @@
         default_layer {
             display-name = "COLEMAK";
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J  &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BACKSPACE
-&kp TAB       &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M  &kp N  &kp E      &kp I    &kp O          &kp SQT
-&kp LEFT_WIN  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH       &kp ENTER
-                            &kp LEFT_ALT  &mo 2  &lt 4 SPACE                                                &td0   &mo 3  &kp LCTRL
+&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J  &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BACKSPACE
+&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M  &kp N  &kp E      &kp I    &kp O          &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH       &kp LEFT_WIN
+                         &kp LEFT_ALT  &mo 2  &lt 4 SPACE                                                &td0   &mo 3  &kp ENTER
             >;
 
             sensor-bindings = <&scroll_encoder>;
