@@ -95,10 +95,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1        &kp N2  &kp N3    &kp N4   &kp N5                                &mmv MOVE_UP                     &kp C_MUTE     &mkp MB4   &kp UP     &mkp MB5   &kp PRINTSCREEN  &kp BSPC
-&trans  &kp NUMBER_6  &kp N7  &kp N8    &kp N9   &kp N0                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_BRI_UP   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_UP        &kp HOME
-&trans  &none         &none   &kp HOME  &kp END  &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_BRI_DEC  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp PAGE_DOWN    &kp END
-                              &trans    &trans   &trans                                                                 &kp DELETE     &kp INS    &trans
+&trans  &none   &kp LEFT  &kp HOME  &kp END  &kp RIGHT                                &mmv MOVE_UP                     &kp C_MUTE     &mkp MB4   &kp UP     &mkp MB5   &kp PRINTSCREEN  &kp BSPC
+&trans  &kp N1  &kp N2    &kp N3    &kp N4   &kp N5                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp C_BRI_UP   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_UP        &kp HOME
+&trans  &kp N6  &kp N7    &kp N8    &kp N9   &kp N0     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_BRI_DEC  &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp PAGE_DOWN    &kp END
+                          &trans    &trans   &trans                                                                    &kp DELETE     &kp INS    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -107,10 +107,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL    &kp AT         &kp HASH      &kp DLLR      &kp PRCNT                               &mmv MOVE_UP                     &kp EQUAL      &kp PLUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN  &kp DEL
-&trans  &kp CARET   &kp AMPERSAND  &kp ASTERISK  &kp TILDE     &kp GRAVE               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS      &kp UNDERSCORE  &kp LBKT              &kp RBKT               &kp PG_UP        &kp HOME
-&trans  &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans                    &mmv MOVE_DOWN                   &kp BACKSLASH  &kp PIPE        &kp LBRC              &kp RBRC               &kp PAGE_DOWN    &kp END
-                                   &trans        &trans        &kp SPACE                                                                &kp RET        &trans          &trans
+&trans  &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                            &mmv MOVE_UP                     &kp PLUS        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN  &kp DEL
+&trans  &kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp UNDERSCORE  &kp MINUS      &kp LBKT              &kp RBKT               &kp PG_UP        &kp HOME
+&trans  &kp CARET        &kp AMPS      &kp ASTERISK  &kp GRAVE     &kp TILDE     &trans                    &mmv MOVE_DOWN                   &kp PIPE        &kp BACKSLASH  &kp LBRC              &kp RBRC               &kp PAGE_DOWN    &kp END
+                                       &trans        &trans        &kp SPACE                                                                &kp RET         &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
