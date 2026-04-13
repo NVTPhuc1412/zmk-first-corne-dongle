@@ -102,16 +102,16 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - PAUSE BREAK
   - SCROLLLOCK
-  - '~'
-  - {t: '`', s: '~'}
+  - PRINTSCREEN
   - INS
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - +
   - {t: '=', s: +}
   - (
   - )
-  - PRINTSCREEN
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '`', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -125,8 +125,8 @@ layers:
   - {t: '-', s: _}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - HOME
-  - PG UP
+  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
@@ -139,8 +139,8 @@ layers:
   - {t: \, s: '|'}
   - '{'
   - '}'
-  - END
-  - PG DN
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
