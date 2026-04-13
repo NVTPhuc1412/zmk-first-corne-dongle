@@ -95,10 +95,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp PAUSE_BREAK  &kp SCROLLLOCK  &kp TILDE  &kp GRAVE  &kp INS                                 &mmv MOVE_UP                     &kp PLUS        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN  &kp BACKSPACE
-&trans  &kp N1           &kp N2          &kp N3     &kp N4     &kp N5                  &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp UNDERSCORE  &kp MINUS      &kp LBKT              &kp RBKT               &kp HOME         &kp PG_UP
-&trans  &kp N6           &kp N7          &kp N8     &kp N9     &kp NUMBER_0  &trans                    &mmv MOVE_DOWN                   &kp PIPE        &kp BACKSLASH  &kp LBRC              &kp RBRC               &kp END          &kp PG_DN
-                                         &trans     &trans     &trans                                                                   &trans          &trans         &trans
+&trans  &kp PAUSE_BREAK  &kp SCROLLLOCK  &kp PRINTSCREEN  &kp INS  &trans                                  &mmv MOVE_UP                     &kp PLUS        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &trans
+&trans  &kp N1           &kp N2          &kp N3           &kp N4   &kp N5                  &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp UNDERSCORE  &kp MINUS      &kp LBKT              &kp RBKT               &kp TILDE  &trans
+&trans  &kp N6           &kp N7          &kp N8           &kp N9   &kp NUMBER_0  &trans                    &mmv MOVE_DOWN                   &kp PIPE        &kp BACKSLASH  &kp LBRC              &kp RBRC               &trans     &trans
+                                         &trans           &trans   &trans                                                                   &trans          &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
