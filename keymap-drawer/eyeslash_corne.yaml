@@ -203,7 +203,7 @@ layers:
   - RGB COLOR HSB(176,100,50)
   - RGB COLOR HSB(0,0,100)
   - '&studio_unlock'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -216,9 +216,9 @@ layers:
   - RGB EFF
   - RGB ON
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - F5
   - F6
@@ -232,7 +232,7 @@ layers:
   - RGB OFF
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - F9
   - F10
