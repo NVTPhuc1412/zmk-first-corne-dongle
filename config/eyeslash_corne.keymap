@@ -80,7 +80,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        QWERTY {
+        alternative_layer {
             bindings = <
 &trans  &kp Q  &kp W  &kp E   &kp R   &kp T                     &trans          &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D   &kp F   &kp G             &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
@@ -93,12 +93,12 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "NUM&SYMBOL";
             bindings = <
-&trans  &kp PAUSE_BREAK  &kp SCROLLLOCK  &kp PRINTSCREEN  &kp INS  &trans                                  &mmv MOVE_UP                     &kp PLUS        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &trans
-&trans  &kp N1           &kp N2          &kp N3           &kp N4   &kp N5                  &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp UNDERSCORE  &kp MINUS      &kp LBKT              &kp RBKT               &kp TILDE  &trans
-&trans  &kp N6           &kp N7          &kp N8           &kp N9   &kp NUMBER_0  &trans                    &mmv MOVE_DOWN                   &kp PIPE        &kp BACKSLASH  &kp LBRC              &kp RBRC               &trans     &trans
-                                         &trans           &trans   &trans                                                                   &trans          &trans         &trans
+&trans  &kp ASTERISK  &kp PLUS  &kp MINUS  &kp EQUAL  &kp SLASH                               &mmv MOVE_UP                     &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &trans     &trans
+&trans  &kp N1        &kp N2    &kp N3     &kp N4     &kp N5                  &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH   &kp PIPE   &trans
+&trans  &kp N6        &kp N7    &kp N8     &kp N9     &kp NUMBER_0  &trans                    &mmv MOVE_DOWN                   &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE       &kp GRAVE  &trans
+                                &trans     &trans     &trans                                                                   &trans  &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -107,16 +107,16 @@
         lower_layer {
             display-name = "NAVIGATION";
             bindings = <
-&trans  &kp PG_UP       &kp HOME      &kp UP        &kp END       &out OUT_BLE                                   &kp C_BRI_INC                   &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans             &trans
-&trans  &kp PG_DN       &kp LEFT      &kp DOWN      &kp RIGHT     &out OUT_USB                &kp C_VOLUME_DOWN  &kp C_MUTE     &kp C_VOLUME_UP  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_CONTROL  &trans
-&trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp C_MUTE                       &kp C_BRI_DEC                   &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans             &trans
-                                      &trans        &trans        &trans                                                                         &trans  &trans          &trans
+&trans  &kp PG_UP       &kp HOME      &kp UP        &kp END       &out OUT_BLE                               &kp C_BRI_INC                   &trans           &mkp MB4        &mmv MOVE_UP    &mkp MB5         &kp PRINTSCREEN    &trans
+&trans  &kp PG_DN       &kp LEFT      &kp DOWN      &kp RIGHT     &out OUT_USB            &kp C_VOLUME_DOWN  &kp C_MUTE     &kp C_VOLUME_UP  &kp SCROLLLOCK   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_CONTROL  &trans
+&trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans                       &kp C_BRI_DEC                   &kp PAUSE_BREAK  &mkp LCLK       &mkp MCLK       &mkp RCLK        &kp INS            &trans
+                                      &trans        &trans        &trans                                                                     &trans           &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        layer_3 {
+        deep_layer {
             display-name = "Fn";
             bindings = <
 &trans  &sys_reset  &bootloader      &studio_unlock   &trans   &trans                                    &mmv MOVE_UP                     &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &bootloader      &sys_reset  &trans
