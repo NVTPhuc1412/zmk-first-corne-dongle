@@ -13,7 +13,7 @@ layers:
   - U
   - Y
   - {t: ;, s: ':'}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - A
   - R
@@ -42,13 +42,13 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - LEFT WIN
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-option$$
   - NUM&SYMBOL
   - {t: '$$mdi:keyboard-space$$', h: NAVIGATION}
-  - {t: '$$mdi:backspace$$', h: Fn}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
   - '&td0'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - LEFT WIN
   NUM&SYMBOL:
   - KP NUMLOCK
   - {t: /, s: '?'}
