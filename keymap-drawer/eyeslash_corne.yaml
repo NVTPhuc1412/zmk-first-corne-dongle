@@ -95,8 +95,8 @@ layers:
   - KP NUMLOCK
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   NAVIGATION:
   - {t: '$$mdi:transfer$$', type: trans}
