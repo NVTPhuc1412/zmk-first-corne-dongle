@@ -50,8 +50,8 @@ layers:
   - '&td0'
   - LEFT WIN
   NUM&SYMBOL:
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - '~'
   - KP 7
   - KP 8
   - KP 9
