@@ -62,7 +62,7 @@
         qwerty {
             bindings = <&tog 1>;
             key-positions = <43 44 45 46>;
-            layers = <0>;
+            layers = <0 1>;
         };
     };
 
