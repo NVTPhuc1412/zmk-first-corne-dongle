@@ -248,4 +248,4 @@ layers:
 combos:
 - p: [43, 44, 45, 46]
   k: {t: QWERTY, h: toggle}
-  l: [COLEMAK]
+  l: [COLEMAK, QWERTY]
