@@ -86,6 +86,7 @@
             bindings = <&tog 2>;
             key-positions = <42 43 46 47>;
             layers = <0 2>;
+        };
         combo_ng_on {
             timeout-ms = <300>;
             key-positions = <15 16>; // H, Jのキー位置に書き換えてください
