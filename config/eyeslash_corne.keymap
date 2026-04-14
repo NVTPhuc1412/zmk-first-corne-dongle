@@ -83,7 +83,7 @@
         raise_layer {
             display-name = "NUM&SYMBOL";
             bindings = <
-&kp GRAVE       &kp TILDE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH                                  &mmv MOVE_UP                     &kp AMPERSAND  &kp HASH         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
+&trans          &kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH                                  &mmv MOVE_UP                     &kp AMPERSAND  &kp HASH         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
 &kp LEFT_SHIFT  &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PERCENT    &kp AT_SIGN      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &trans
 &trans          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK  &mkp MCLK                    &mmv MOVE_DOWN                   &kp DOLLAR     &kp EXCLAMATION  &trans                &trans                 &trans         &kp CARET
                                                   &kp KP_NUMLOCK   &trans           &trans                                                                      &trans         &trans           &kp RIGHT_ALT
