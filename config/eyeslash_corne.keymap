@@ -83,10 +83,10 @@
         raise_layer {
             display-name = "NUM&SYMBOL";
             bindings = <
-&kp GRAVE  &kp TILDE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                &mmv MOVE_UP                     &kp AMPERSAND  &kp AT_SIGN      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &trans
-&kp SLASH  &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH       &kp UNDERSCORE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp PIPE
-&trans     &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT    &mkp MCLK                    &mmv MOVE_DOWN                   &kp PERCENT    &kp EXCLAMATION  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &trans
-                                             &kp KP_NUMLOCK   &trans           &trans                                                                   &kp EQUAL      &trans           &kp RIGHT_ALT
+&kp GRAVE  &kp TILDE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                &mmv MOVE_UP                     &kp AT_SIGN  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &trans
+&kp SLASH  &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH     &kp EQUAL        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp PIPE
+&trans     &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT    &mkp MCLK                    &mmv MOVE_DOWN                   &kp PERCENT  &kp UNDERSCORE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND  &kp DOLLAR
+                                             &kp KP_NUMLOCK   &trans           &trans                                                                   &trans       &trans           &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
