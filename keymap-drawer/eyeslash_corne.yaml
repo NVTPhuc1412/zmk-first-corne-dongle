@@ -50,20 +50,20 @@ layers:
   - '&td0'
   - LEFT WIN
   NUM&SYMBOL:
-  - KP NUMLOCK
-  - {t: /, s: '?'}
+  - {t: '`', s: '~'}
+  - '~'
   - KP 7
   - KP 8
   - KP 9
   - +
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&'
   - '@'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - '!'
-  - {t: '`', s: '~'}
+  - (
+  - )
+  - ^
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
   - '*'
   - KP 4
   - KP 5
@@ -73,31 +73,31 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '#'
-  - (
-  - )
-  - '%'
+  - _
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: \, s: '|'}
-  - '~'
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
   - KP 1
   - KP 2
   - KP 3
-  - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ., s: '>'}
+  - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - $
+  - '%'
+  - '!'
   - '{'
   - '}'
-  - ^
-  - '&'
-  - $$mdi:apple-keyboard-option$$
+  - $
   - {t: '$$mdi:transfer$$', type: trans}
+  - KP NUMLOCK
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
+  - $$mdi:apple-keyboard-option$$
   NAVIGATION:
   - {t: '$$mdi:transfer$$', type: trans}
   - PG UP
