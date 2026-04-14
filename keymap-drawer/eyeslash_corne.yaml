@@ -57,8 +57,8 @@ layers:
   - KP 9
   - +
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&'
   - '@'
+  - '!'
   - (
   - )
   - ^
@@ -73,7 +73,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '#'
-  - _
+  - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
@@ -87,15 +87,15 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '%'
-  - '!'
+  - _
   - '{'
   - '}'
+  - '&'
   - $
-  - {t: '$$mdi:transfer$$', type: trans}
   - KP NUMLOCK
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   NAVIGATION:
