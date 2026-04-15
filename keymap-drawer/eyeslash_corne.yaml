@@ -126,7 +126,7 @@ layers:
   - '&ng K'
   - '&ng L'
   - '&ng SEMI'
-  - INTERNATIONAL 4
+  - INT HENKAN
   - {t: '$$mdi:transfer$$', type: trans}
   - '&ng Z'
   - '&ng X'
