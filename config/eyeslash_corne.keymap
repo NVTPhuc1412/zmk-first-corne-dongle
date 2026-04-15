@@ -95,14 +95,14 @@
 
         combo_ng_on {
             timeout-ms = <300>;
-            key-positions = <42 43 44>; // H, Jのキー位置に書き換えてください
+            key-positions = <15 16 17>; // H, Jのキー位置に書き換えてください
             bindings = <&ng_on>;
             layers = <0>; // デフォルトレイヤーが0の前提
         };
 
         combo_ng_off {
             timeout-ms = <300>;
-            key-positions = <45 46 47>; // F, Gのキー位置に書き換えてください
+            key-positions = <23 24 24 25>; // F, Gのキー位置に書き換えてください
             bindings = <&ng_off>;
             layers = <0 2>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
         };
