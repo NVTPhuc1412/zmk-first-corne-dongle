@@ -204,7 +204,7 @@ layers:
   - END
   - OUT BLE
   - BRI INC
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB5'
@@ -219,12 +219,12 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
   - $$mdi:volume-high$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-down$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - SCROLLLOCK
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
