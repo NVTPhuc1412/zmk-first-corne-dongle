@@ -141,11 +141,11 @@ layers:
   - '&ng DOT'
   - '&ng SLASH'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&tog_ime'
   - NUM&SYMBOL
   - '&ng SPACE'
   - '&ng ENTER'
-  - Fn
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUM&SYMBOL:
   - {t: '`', s: '~'}
@@ -292,15 +292,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [43, 44, 45, 46]
   k: {t: QWERTY, h: toggle}
   l: [COLEMAK, QWERTY]
-- p: [15, 16, 17]
+- p: [16, 17, 23, 24]
   k: '&ng_on'
   l: [COLEMAK]
-- p: [23, 24, 25]
+- p: [23, 24, 17, 16]
   k: '&ng_off'
-  l: [COLEMAK, NAGINATA]
+  l: [NAGINATA]
