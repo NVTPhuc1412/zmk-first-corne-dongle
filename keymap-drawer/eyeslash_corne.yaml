@@ -98,6 +98,55 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  NAGINATA:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ng Q'
+  - '&ng W'
+  - '&ng E'
+  - '&ng R'
+  - '&ng T'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&ng Y'
+  - '&ng U'
+  - '&ng I'
+  - '&ng O'
+  - '&ng P'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - INT MUHENKAN
+  - '&ng A'
+  - '&ng S'
+  - '&ng D'
+  - '&ng F'
+  - '&ng G'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - '&ng H'
+  - '&ng J'
+  - '&ng K'
+  - '&ng L'
+  - '&ng SEMI'
+  - INT HENKAN
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ng Z'
+  - '&ng X'
+  - '&ng C'
+  - '&ng V'
+  - '&ng B'
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&ng N'
+  - '&ng M'
+  - '&ng COMMA'
+  - '&ng DOT'
+  - '&ng SLASH'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&tog_ime'
+  - NUM&SYMBOL
+  - '&ng SPACE'
+  - '&ng ENTER'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   NUM&SYMBOL:
   - {t: '`', s: '~'}
   - '~'
@@ -155,7 +204,7 @@ layers:
   - END
   - OUT BLE
   - BRI INC
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
   - '&mkp MB4'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB5'
@@ -170,12 +219,12 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
   - $$mdi:volume-high$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-down$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - SCROLLLOCK
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -249,3 +298,9 @@ combos:
 - p: [43, 44, 45, 46]
   k: {t: QWERTY, h: toggle}
   l: [COLEMAK, QWERTY]
+- p: [16, 17, 23, 24]
+  k: '&ng_on'
+  l: [COLEMAK]
+- p: [23, 24, 17, 16]
+  k: '&ng_off'
+  l: [NAGINATA]
