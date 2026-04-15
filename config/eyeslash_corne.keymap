@@ -40,6 +40,19 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>;
         };
+
+        toggle_ime: toggle_ime {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp GRAVE>,
+                <&macro_release>;
+
+            label = "TOGGLE_IME";
+        };
     };
 
     sensors {
@@ -123,12 +136,12 @@
         };
 
         japanese_layer {
-            display-name = "かな";
+            display-name = "NAGINATA";
             bindings = <
-&trans  &ng Q  &ng W  &ng E   &ng R   &ng T                        &trans          &ng Y      &ng U   &ng I      &ng O    &ng P      &trans
-&trans  &ng A  &ng S  &ng D   &ng F   &ng G                &trans  &trans  &trans  &ng H      &ng J   &ng K      &ng L    &ng SEMI   &trans
-&trans  &ng Z  &ng X  &ng C   &ng V   &ng B      &trans            &trans          &ng N      &ng M   &ng COMMA  &ng DOT  &ng SLASH  &trans
-                      &trans  &trans  &ng SPACE                                    &ng ENTER  &trans  &trans
+&trans  &ng Q  &ng W  &ng E   &ng R  &ng T                        &trans          &ng Y      &ng U  &ng I      &ng O    &ng P      &trans
+&trans  &ng A  &ng S  &ng D   &ng F  &ng G                &trans  &trans  &trans  &ng H      &ng J  &ng K      &ng L    &ng SEMI   &trans
+&trans  &ng Z  &ng X  &ng C   &ng V  &ng B      &trans            &trans          &ng N      &ng M  &ng COMMA  &ng DOT  &ng SLASH  &trans
+                      &trans  &mo 3  &ng SPACE                                    &ng ENTER  &mo 5  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
