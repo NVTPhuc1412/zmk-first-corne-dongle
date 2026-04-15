@@ -40,6 +40,20 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>;
         };
+
+        tog_ime: tog_ime {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp GRAVE>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "TOG_IME";
+        };
     };
 
     sensors {
@@ -82,16 +96,16 @@
 
         combo_ng_on {
             timeout-ms = <300>;
-            key-positions = <15 16 17>; // H, Jのキー位置に書き換えてください
+            key-positions = <16 17 23 24>; // H, Jのキー位置に書き換えてください
             bindings = <&ng_on>;
             layers = <0>; // デフォルトレイヤーが0の前提
         };
 
         combo_ng_off {
             timeout-ms = <300>;
-            key-positions = <23 24 25>; // F, Gのキー位置に書き換えてください
+            key-positions = <23 24 17 16>; // F, Gのキー位置に書き換えてください
             bindings = <&ng_off>;
-            layers = <0 2>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
+            layers = <2>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
         };
     };
 
@@ -125,10 +139,10 @@
         japanese_layer {
             display-name = "NAGINATA";
             bindings = <
-&trans            &ng Q  &ng W  &ng E   &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U  &ng I      &ng O    &ng P      &trans
-&kp INT_MUHENKAN  &ng A  &ng S  &ng D   &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J  &ng K      &ng L    &ng SEMI   &kp INTERNATIONAL_4
-&trans            &ng Z  &ng X  &ng C   &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M  &ng COMMA  &ng DOT  &ng SLASH  &trans
-                                &trans  &mo 3  &ng SPACE                                                                 &ng ENTER  &mo 5  &trans
+&trans            &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U   &ng I      &ng O    &ng P      &trans
+&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J   &ng K      &ng L    &ng SEMI   &kp INTERNATIONAL_4
+&trans            &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M   &ng COMMA  &ng DOT  &ng SLASH  &trans
+                                &tog_ime  &mo 3  &ng SPACE                                                                 &ng ENTER  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
