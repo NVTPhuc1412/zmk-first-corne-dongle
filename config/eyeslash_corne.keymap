@@ -74,7 +74,7 @@
     combos {
         compatible = "zmk,combos";
 
-        qwerty {
+        qwerty_tog {
             bindings = <&tog 1>;
             key-positions = <43 44 45 46>;
             layers = <0 1>;
@@ -89,7 +89,7 @@
 
         combo_ng_off {
             timeout-ms = <300>;
-            key-positions = <23 24 24 25>; // F, Gのキー位置に書き換えてください
+            key-positions = <23 24 25>; // F, Gのキー位置に書き換えてください
             bindings = <&ng_off>;
             layers = <0 2>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
         };
@@ -125,10 +125,10 @@
         japanese_layer {
             display-name = "NAGINATA";
             bindings = <
-&trans            &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U  &ng I      &ng O    &ng P      &trans
-&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J  &ng K      &ng L    &ng SEMI   &kp INTERNATIONAL_4
-&trans            &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M  &ng COMMA  &ng DOT  &ng SLASH  &trans
-                                &kp INT2  &mo 3  &ng SPACE                                                                 &ng ENTER  &mo 5  &trans
+&trans            &ng Q  &ng W  &ng E   &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U  &ng I      &ng O    &ng P      &trans
+&kp INT_MUHENKAN  &ng A  &ng S  &ng D   &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J  &ng K      &ng L    &ng SEMI   &kp INTERNATIONAL_4
+&trans            &ng Z  &ng X  &ng C   &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M  &ng COMMA  &ng DOT  &ng SLASH  &trans
+                                &trans  &mo 3  &ng SPACE                                                                 &ng ENTER  &mo 5  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
