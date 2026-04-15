@@ -34,7 +34,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 2>,
+                <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 3>,
                 <&macro_press>,
                 <&kp LCTRL &kp LSHIFT>,
                 <&macro_tap>,
@@ -104,12 +104,6 @@
     combos {
         compatible = "zmk,combos";
 
-        qwerty_tog {
-            bindings = <&tog 1>;
-            key-positions = <43 44 45 46>;
-            layers = <0 1>;
-        };
-
         combo_ng_on {
             timeout-ms = <300>;
             key-positions = <16 17 23 24>; // H, Jのキー位置に書き換えてください
@@ -121,7 +115,12 @@
             timeout-ms = <300>;
             key-positions = <23 24 17 16>; // F, Gのキー位置に書き換えてください
             bindings = <&ng_off>;
-            layers = <2>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
+            layers = <3>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
+        };
+
+        tmp {
+            bindings = <&none>;
+            key-positions = <29 15 14 16 3 17 32>;
         };
     };
 
@@ -134,19 +133,30 @@
 &kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J        &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
 &kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N  &kp E         &kp I    &kp O          &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
-                         &kp LEFT_ALT  &mo 3  &lt 4 SPACE                                                &lt 5 ENTER  &td0   &kp LEFT_WIN
+                         &kp LEFT_ALT  &mo 4  &lt 5 SPACE                                                &lt 6 ENTER  &td0   &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        qwerty_layer {
-            display-name = "QWERTY";
+        vie_layer {
+            display-name = "COLEMAK-VIE";
             bindings = <
-&trans  &kp Q  &kp W  &kp E   &kp R   &kp T                     &trans          &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D   &kp F   &kp G             &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &trans            &trans          &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J        &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
+&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N  &kp E         &kp I    &kp O          &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
+                         &kp LEFT_ALT  &mo 4  &lt 2 SPACE                                                &lt 6 ENTER  &td0   &kp LEFT_WIN
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        valt_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -155,10 +165,10 @@
         japanese_layer {
             display-name = "NAGINATA";
             bindings = <
-&trans            &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U   &ng I      &ng O    &ng P      &trans
-&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J   &ng K      &ng L    &ng SEMI   &kp INT_HENKAN
-&trans            &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M   &ng COMMA  &ng DOT  &ng SLASH  &trans
-                                &tog_ime  &mo 3  &ng SPACE                                                                 &ng ENTER  &trans  &trans
+&kp ESCAPE        &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U       &ng I         &ng O    &ng P      &kp BACKSPACE
+&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J       &ng K         &ng L    &ng SEMI   &kp INT_HENKAN
+&kp LCTRL         &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M       &ng COMMA     &ng DOT  &ng SLASH  &kp DEL
+                                &tog_ime  &mo 4  &ng SPACE                                                                 &ng ENTER  &kp LSHIFT  &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
