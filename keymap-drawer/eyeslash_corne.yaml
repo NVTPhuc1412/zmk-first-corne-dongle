@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  かな:
+  NAGINATA:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&ng Q'
   - '&ng W'
@@ -142,10 +142,10 @@ layers:
   - '&ng SLASH'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - NUM&SYMBOL
   - '&ng SPACE'
   - '&ng ENTER'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Fn
   - {t: '$$mdi:transfer$$', type: trans}
   NUM&SYMBOL:
   - {t: '`', s: '~'}
@@ -292,7 +292,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [43, 44, 45, 46]
@@ -303,4 +303,4 @@ combos:
   l: [COLEMAK]
 - p: [45, 46, 47]
   k: '&ng_off'
-  l: [COLEMAK, かな]
+  l: [COLEMAK, NAGINATA]
