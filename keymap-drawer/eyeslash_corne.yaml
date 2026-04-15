@@ -298,9 +298,9 @@ combos:
 - p: [43, 44, 45, 46]
   k: {t: QWERTY, h: toggle}
   l: [COLEMAK, QWERTY]
-- p: [42, 43, 44]
+- p: [15, 16, 17]
   k: '&ng_on'
   l: [COLEMAK]
-- p: [45, 46, 47]
+- p: [23, 24, 24, 25]
   k: '&ng_off'
   l: [COLEMAK, NAGINATA]
