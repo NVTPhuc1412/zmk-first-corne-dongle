@@ -41,12 +41,20 @@
             bindings = <&macro_tap>, <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>;
         };
 
-        toggle_ime: toggle_ime {
+        to_hiragana: to_hiragana {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp GRAVE>, <&macro_release &kp LALT>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp CAPS>, <&macro_release &kp LCTRL>;
+        };
+
+        to_katakana: to_katakana {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp CAPS>, <&macro_release &kp LALT>;
         };
     };
 
