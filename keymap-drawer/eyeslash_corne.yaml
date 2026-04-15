@@ -105,43 +105,43 @@ layers:
   - '&ng E'
   - '&ng R'
   - '&ng T'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&ng Y'
   - '&ng U'
   - '&ng I'
   - '&ng O'
   - '&ng P'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - INT MUHENKAN
   - '&ng A'
   - '&ng S'
   - '&ng D'
   - '&ng F'
   - '&ng G'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&ng H'
   - '&ng J'
   - '&ng K'
   - '&ng L'
   - '&ng SEMI'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - INTERNATIONAL 4
   - {t: '$$mdi:transfer$$', type: trans}
   - '&ng Z'
   - '&ng X'
   - '&ng C'
   - '&ng V'
   - '&ng B'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&ng N'
   - '&ng M'
   - '&ng COMMA'
   - '&ng DOT'
   - '&ng SLASH'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - INT2
   - NUM&SYMBOL
   - '&ng SPACE'
   - '&ng ENTER'
