@@ -141,7 +141,7 @@ layers:
   - '&ng DOT'
   - '&ng SLASH'
   - {t: '$$mdi:transfer$$', type: trans}
-  - INT2
+  - {t: '$$mdi:transfer$$', type: trans}
   - NUM&SYMBOL
   - '&ng SPACE'
   - '&ng ENTER'
@@ -301,6 +301,6 @@ combos:
 - p: [15, 16, 17]
   k: '&ng_on'
   l: [COLEMAK]
-- p: [23, 24, 24, 25]
+- p: [23, 24, 25]
   k: '&ng_off'
   l: [COLEMAK, NAGINATA]
