@@ -40,22 +40,6 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>;
         };
-
-        to_hiragana: to_hiragana {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp CAPS>, <&macro_release &kp LCTRL>;
-        };
-
-        to_katakana: to_katakana {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp CAPS>, <&macro_release &kp LALT>;
-        };
     };
 
     sensors {
@@ -141,10 +125,10 @@
         japanese_layer {
             display-name = "NAGINATA";
             bindings = <
-&trans  &ng Q  &ng W  &ng E   &ng R  &ng T                        &trans          &ng Y      &ng U  &ng I      &ng O    &ng P      &trans
-&trans  &ng A  &ng S  &ng D   &ng F  &ng G                &trans  &trans  &trans  &ng H      &ng J  &ng K      &ng L    &ng SEMI   &trans
-&trans  &ng Z  &ng X  &ng C   &ng V  &ng B      &trans            &trans          &ng N      &ng M  &ng COMMA  &ng DOT  &ng SLASH  &trans
-                      &trans  &mo 3  &ng SPACE                                    &ng ENTER  &mo 5  &trans
+&trans            &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U  &ng I      &ng O    &ng P      &trans
+&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J  &ng K      &ng L    &ng SEMI   &kp INTERNATIONAL_4
+&trans            &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M  &ng COMMA  &ng DOT  &ng SLASH  &trans
+                                &kp INT2  &mo 3  &ng SPACE                                                                 &ng ENTER  &mo 5  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
