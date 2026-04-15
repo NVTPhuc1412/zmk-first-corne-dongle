@@ -156,7 +156,7 @@
             display-name = "NAGINATA";
             bindings = <
 &trans            &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U   &ng I      &ng O    &ng P      &trans
-&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J   &ng K      &ng L    &ng SEMI   &kp INTERNATIONAL_4
+&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J   &ng K      &ng L    &ng SEMI   &kp INT_HENKAN
 &trans            &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M   &ng COMMA  &ng DOT  &ng SLASH  &trans
                                 &tog_ime  &mo 3  &ng SPACE                                                                 &ng ENTER  &trans  &trans
             >;
