@@ -306,6 +306,19 @@ combos:
   l: [COLEMAK]
 - p: [15, 16, 24, 25]
   k: {t: COLEMAK, h: toggle}
+  l: [COLEMAK-VIE]
+- p: [41, 40, 0]
+  k: '&uc UC_SET_WIN_COMPOSE'
+  l: [COLEMAK-VIE]
+- p: [41, 40, 1]
+  k: '&uc UC_SET_WIN_ALT'
+  l: [COLEMAK-VIE]
+- p: [41, 40, 2]
+  k: '&uc UC_SET_MACOS'
+  l: [COLEMAK-VIE]
+- p: [41, 40, 3]
+  k: '&uc UC_SET_LINUX'
+  l: [COLEMAK-VIE]
 - p: [14, 23]
   k: '&uc 0x00E0 0x00C0'
   l: [COLEMAK-VIE]
@@ -504,5 +517,3 @@ combos:
 - p: [37, 14, 44]
   k: '&uc 0x1EB3 0x1EB2'
   l: [COLEMAK-VIE]
-- p: [41, 40, 0]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
