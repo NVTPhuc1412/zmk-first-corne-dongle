@@ -111,14 +111,14 @@
             timeout-ms = <300>;
             key-positions = <16 17 23 24>; // H, Jのキー位置に書き換えてください
             bindings = <&ng_on>;
-            layers = <0>; // デフォルトレイヤーが0の前提
+            layers = <0 1>; // デフォルトレイヤーが0の前提
         };
 
         combo_ng_off {
             timeout-ms = <300>;
             key-positions = <23 24 17 16>; // F, Gのキー位置に書き換えてください
             bindings = <&ng_off>;
-            layers = <3>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
+            layers = <2>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
         };
 
         on_vie {
