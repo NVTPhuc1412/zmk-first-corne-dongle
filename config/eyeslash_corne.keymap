@@ -37,7 +37,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 3>,
+                <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 2>,
                 <&macro_press>,
                 <&kp LCTRL &kp LSHIFT>,
                 <&macro_tap>,
