@@ -504,3 +504,5 @@ combos:
 - p: [37, 14, 44]
   k: '&uc 0x1EB3 0x1EB2'
   l: [COLEMAK-VIE]
+- p: [41, 40, 0]
+  k: {t: '$$mdi:minus-circle-outline$$', type: none}
