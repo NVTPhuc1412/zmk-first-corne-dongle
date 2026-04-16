@@ -319,7 +319,7 @@ combos:
 - p: [41, 40, 3]
   k: '&uc UC_SET_LINUX'
   l: [COLEMAK-VIE]
-- p: [32, 45]
+- p: [32, 44]
   k: '&uc 0x0111 0x0110'
   l: [COLEMAK-VIE]
 - p: [14, 23]
@@ -430,58 +430,58 @@ combos:
 - p: [32, 24, 44]
   k: '&uc 0x1EC3 0x1EC2'
   l: [COLEMAK-VIE]
-- p: [15, 45]
+- p: [16, 44]
   k: '&uc 0x00E2 0x00C2'
   l: [COLEMAK-VIE]
-- p: [23, 15, 45]
+- p: [23, 16, 44]
   k: '&uc 0x1EA7 0x1EA6'
   l: [COLEMAK-VIE]
-- p: [24, 15, 45]
+- p: [24, 16, 44]
   k: '&uc 0x1EA5 0x1EA4'
   l: [COLEMAK-VIE]
-- p: [25, 15, 45]
+- p: [25, 16, 44]
   k: '&uc 0x1EAD 0x1EAC'
   l: [COLEMAK-VIE]
-- p: [9, 15, 45]
+- p: [9, 44, 16]
   k: '&uc 0x1EAB 0x1EAA'
   l: [COLEMAK-VIE]
-- p: [37, 15, 45]
+- p: [37, 16, 44]
   k: '&uc 0x1EA9 0x1EA8'
   l: [COLEMAK-VIE]
-- p: [16, 45]
+- p: [44, 17]
   k: '&uc 0x01B0 0x01AF'
   l: [COLEMAK-VIE]
-- p: [23, 16, 45]
+- p: [23, 44, 17]
   k: '&uc 0x1EEB 0x1EEA'
   l: [COLEMAK-VIE]
-- p: [24, 16, 45]
+- p: [24, 44, 17]
   k: '&uc 0x1EE9 0x1EE8'
   l: [COLEMAK-VIE]
-- p: [25, 16, 45]
+- p: [25, 45, 44, 17]
   k: '&uc 0x1EF1 0x1EF0'
   l: [COLEMAK-VIE]
-- p: [9, 16, 45]
+- p: [9, 44, 17]
   k: '&uc 0x1EEF 0x1EEE'
   l: [COLEMAK-VIE]
-- p: [37, 16, 45]
+- p: [37, 44, 17]
   k: '&uc 0x1EED 0x1EEC'
   l: [COLEMAK-VIE]
-- p: [17, 45]
+- p: [44, 25]
   k: '&uc 0x01A1 0x01A0'
   l: [COLEMAK-VIE]
-- p: [23, 17, 45]
+- p: [17, 25, 44]
   k: '&uc 0x1EDD 0x1EDC'
   l: [COLEMAK-VIE]
-- p: [24, 17, 45]
+- p: [44, 25, 16]
   k: '&uc 0x1EDB 0x1EDA'
   l: [COLEMAK-VIE]
-- p: [25, 17, 45]
+- p: [25, 44, 15]
   k: '&uc 0x1EE3 0x1EE2'
   l: [COLEMAK-VIE]
-- p: [17, 9, 45]
+- p: [25, 44, 3]
   k: '&uc 0x1EE1 0x1EE0'
   l: [COLEMAK-VIE]
-- p: [37, 17, 45]
+- p: [25, 44, 32]
   k: '&uc 0x1EDF 0x1EDE'
   l: [COLEMAK-VIE]
 - p: [26, 44]
@@ -502,21 +502,21 @@ combos:
 - p: [26, 32, 44]
   k: '&uc 0x1ED5 0x1ED4'
   l: [COLEMAK-VIE]
-- p: [14, 45]
+- p: [15, 44]
   k: '&uc 0x0103 0x0102'
   l: [COLEMAK-VIE]
-- p: [23, 14, 45]
+- p: [23, 15, 44]
   k: '&uc 0x1EB1 0x1EB0'
   l: [COLEMAK-VIE]
-- p: [24, 14, 45]
+- p: [24, 15, 15, 44]
   k: '&uc 0x1EAF 0x1EAE'
   l: [COLEMAK-VIE]
-- p: [25, 14, 45]
+- p: [25, 15, 44]
   k: '&uc 0x1EB7 0x1EB6'
   l: [COLEMAK-VIE]
-- p: [9, 14, 45]
+- p: [9, 15, 44]
   k: '&uc 0x1EB5 0x1EB4'
   l: [COLEMAK-VIE]
-- p: [37, 14, 45]
+- p: [37, 15, 44]
   k: '&uc 0x1EB3 0x1EB2'
   l: [COLEMAK-VIE]
