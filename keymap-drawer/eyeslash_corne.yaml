@@ -297,10 +297,10 @@ layers:
 combos:
 - p: [16, 17, 23, 24]
   k: '&ng_on'
-  l: [COLEMAK]
+  l: [COLEMAK, COLEMAK-VIE]
 - p: [23, 24, 17, 16]
   k: '&ng_off'
-  l: [NUM&SYMBOL]
+  l: [NAGINATA]
 - p: [15, 16, 24, 25]
   k: {t: COLEMAK-VIE, h: toggle}
   l: [COLEMAK]
