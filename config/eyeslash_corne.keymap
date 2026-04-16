@@ -159,7 +159,7 @@
 
         combo_dd {
             timeout-ms = <40>;
-            key-positions = <32 45>;
+            key-positions = <32 44>;
             bindings = <&uc 0x0111 0x0110>;
             layers = <1>;
         };
@@ -418,126 +418,126 @@
 
         combo_a_circ {
             timeout-ms = <40>;
-            key-positions = <15 45>;
+            key-positions = <16 44>;
             bindings = <&uc 0x00E2 0x00C2>;
             layers = <1>;
         };
 
         combo_a_circ_huyen {
             timeout-ms = <50>;
-            key-positions = <23 15 45>;
+            key-positions = <23 16 44>;
             bindings = <&uc 0x1EA7 0x1EA6>;
             layers = <1>;
         };
 
         combo_a_circ_sac {
             timeout-ms = <50>;
-            key-positions = <24 15 45>;
+            key-positions = <24 16 44>;
             bindings = <&uc 0x1EA5 0x1EA4>;
             layers = <1>;
         };
 
         combo_a_circ_nang {
             timeout-ms = <50>;
-            key-positions = <25 15 45>;
+            key-positions = <25 16 44>;
             bindings = <&uc 0x1EAD 0x1EAC>;
             layers = <1>;
         };
 
         combo_a_circ_nga {
             timeout-ms = <50>;
-            key-positions = <9 15 45>;
+            key-positions = <9 44 16>;
             bindings = <&uc 0x1EAB 0x1EAA>;
             layers = <1>;
         };
 
         combo_a_circ_hoi {
             timeout-ms = <50>;
-            key-positions = <37 15 45>;
+            key-positions = <37 16 44>;
             bindings = <&uc 0x1EA9 0x1EA8>;
             layers = <1>;
         };
 
         combo_u_horn {
             timeout-ms = <40>;
-            key-positions = <16 45>;
+            key-positions = <44 17>;
             bindings = <&uc 0x01B0 0x01AF>;
             layers = <1>;
         };
 
         combo_u_horn_huyen {
             timeout-ms = <50>;
-            key-positions = <23 16 45>;
+            key-positions = <23 44 17>;
             bindings = <&uc 0x1EEB 0x1EEA>;
             layers = <1>;
         };
 
         combo_u_horn_sac {
             timeout-ms = <50>;
-            key-positions = <24 16 45>;
+            key-positions = <24 44 17>;
             bindings = <&uc 0x1EE9 0x1EE8>;
             layers = <1>;
         };
 
         combo_u_horn_nang {
             timeout-ms = <50>;
-            key-positions = <25 16 45>;
+            key-positions = <25 45 44 17>;
             bindings = <&uc 0x1EF1 0x1EF0>;
             layers = <1>;
         };
 
         combo_u_horn_nga {
             timeout-ms = <50>;
-            key-positions = <9 16 45>;
+            key-positions = <9 44 17>;
             bindings = <&uc 0x1EEF 0x1EEE>;
             layers = <1>;
         };
 
         combo_u_horn_hoi {
             timeout-ms = <50>;
-            key-positions = <37 16 45>;
+            key-positions = <37 44 17>;
             bindings = <&uc 0x1EED 0x1EEC>;
             layers = <1>;
         };
 
         combo_o_horn {
             timeout-ms = <40>;
-            key-positions = <17 45>;
+            key-positions = <44 25>;
             bindings = <&uc 0x01A1 0x01A0>;
             layers = <1>;
         };
 
         combo_o_horn_huyen {
             timeout-ms = <50>;
-            key-positions = <23 17 45>;
+            key-positions = <17 25 44>;
             bindings = <&uc 0x1EDD 0x1EDC>;
             layers = <1>;
         };
 
         combo_o_horn_sac {
             timeout-ms = <50>;
-            key-positions = <24 17 45>;
+            key-positions = <44 25 16>;
             bindings = <&uc 0x1EDB 0x1EDA>;
             layers = <1>;
         };
 
         combo_o_horn_nang {
             timeout-ms = <50>;
-            key-positions = <25 17 45>;
+            key-positions = <25 44 15>;
             bindings = <&uc 0x1EE3 0x1EE2>;
             layers = <1>;
         };
 
         combo_o_horn_nga {
             timeout-ms = <50>;
-            key-positions = <17 9 45>;
+            key-positions = <25 44 3>;
             bindings = <&uc 0x1EE1 0x1EE0>;
             layers = <1>;
         };
 
         combo_o_horn_hoi {
             timeout-ms = <50>;
-            key-positions = <37 17 45>;
+            key-positions = <25 44 32>;
             bindings = <&uc 0x1EDF 0x1EDE>;
             layers = <1>;
         };
@@ -586,42 +586,42 @@
 
         combo_a_breve {
             timeout-ms = <40>;
-            key-positions = <14 45>;
+            key-positions = <15 44>;
             bindings = <&uc 0x0103 0x0102>;
             layers = <1>;
         };
 
         combo_a_breve_huyen {
             timeout-ms = <50>;
-            key-positions = <23 14 45>;
+            key-positions = <23 15 44>;
             bindings = <&uc 0x1EB1 0x1EB0>;
             layers = <1>;
         };
 
         combo_a_breve_sac {
             timeout-ms = <50>;
-            key-positions = <24 14 45>;
+            key-positions = <24 15 15 44>;
             bindings = <&uc 0x1EAF 0x1EAE>;
             layers = <1>;
         };
 
         combo_a_breve_nang {
             timeout-ms = <50>;
-            key-positions = <25 14 45>;
+            key-positions = <25 15 44>;
             bindings = <&uc 0x1EB7 0x1EB6>;
             layers = <1>;
         };
 
         combo_a_breve_nga {
             timeout-ms = <50>;
-            key-positions = <9 14 45>;
+            key-positions = <9 15 44>;
             bindings = <&uc 0x1EB5 0x1EB4>;
             layers = <1>;
         };
 
         combo_a_breve_hoi {
             timeout-ms = <50>;
-            key-positions = <37 14 45>;
+            key-positions = <37 15 44>;
             bindings = <&uc 0x1EB3 0x1EB2>;
             layers = <1>;
         };
