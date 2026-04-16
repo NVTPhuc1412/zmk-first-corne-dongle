@@ -94,59 +94,10 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-option$$
   - NUM&SYMBOL
-  - {t: '$$mdi:keyboard-space$$', h: VIE-UNIQUE}
+  - {t: '$$mdi:keyboard-space$$', h: NAVIGATION}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - '&td0'
   - LEFT WIN
-  VIE-UNIQUE:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc 0x00EA 0x00CA'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc 0x00E2 0x00C2'
-  - '&uc 0x01B0 0x01AF'
-  - '&uc 0x01A1 0x01A0'
-  - '&uc 0x00F4 0x00D4'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc 0x0103 0x0102'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&uc 0x0111 0x0110'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   NAGINATA:
   - $$mdi:keyboard-esc$$
   - '&ng Q'
@@ -349,7 +300,12 @@ combos:
   l: [COLEMAK]
 - p: [23, 24, 17, 16]
   k: '&ng_off'
-  l: [NAGINATA]
+  l: [NUM&SYMBOL]
+- p: [15, 16, 24, 25]
+  k: {t: COLEMAK-VIE, h: toggle}
+  l: [COLEMAK]
+- p: [15, 16, 24, 25]
+  k: {t: COLEMAK, h: toggle}
 - p: [14, 23]
   k: '&uc 0x00E0 0x00C0'
   l: [COLEMAK-VIE]
@@ -442,96 +398,109 @@ combos:
   l: [COLEMAK-VIE]
 - p: [24, 17, 45]
   k: '&uc 0x1EC1 0x1EC0'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
+- p: [24, 45]
+  k: '&uc 0x00EA 0x00CA'
+  l: [COLEMAK-VIE]
 - p: [24, 16, 45]
   k: '&uc 0x1EBF 0x1EBE'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [15, 24, 45]
   k: '&uc 0x1EC7 0x1EC6'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [3, 24, 45]
   k: '&uc 0x1EC5 0x1EC4'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [32, 24, 45]
   k: '&uc 0x1EC3 0x1EC2'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
+- p: [14, 44]
+  k: '&uc 0x00E2 0x00C2'
+  l: [COLEMAK-VIE]
 - p: [14, 23, 44]
   k: '&uc 0x1EA7 0x1EA6'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [14, 24, 44]
   k: '&uc 0x1EA5 0x1EA4'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [14, 25, 44]
   k: '&uc 0x1EAD 0x1EAC'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [14, 44, 9]
   k: '&uc 0x1EAB 0x1EAA'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [14, 37, 44]
   k: '&uc 0x1EA9 0x1EA8'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
+- p: [44, 16]
+  k: '&uc 0x01B0 0x01AF'
+  l: [COLEMAK-VIE]
 - p: [23, 44, 16]
   k: '&uc 0x1EEB 0x1EEA'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [24, 44, 16]
   k: '&uc 0x1EE9 0x1EE8'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [25, 44, 16]
   k: '&uc 0x1EF1 0x1EF0'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [44, 9, 16]
   k: '&uc 0x1EEF 0x1EEE'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [37, 44, 16]
   k: '&uc 0x1EED 0x1EEC'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
+- p: [17, 44]
+  k: '&uc 0x01A1 0x01A0'
+  l: [COLEMAK-VIE]
 - p: [23, 17, 44]
   k: '&uc 0x1EDD 0x1EDC'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [24, 17, 44]
   k: '&uc 0x1EDB 0x1EDA'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [25, 17, 44]
   k: '&uc 0x1EE3 0x1EE2'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [17, 44, 9]
   k: '&uc 0x1EE1 0x1EE0'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [37, 17, 44]
   k: '&uc 0x1EDF 0x1EDE'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
+- p: [26, 45]
+  k: '&uc 0x00F4 0x00D4'
+  l: [COLEMAK-VIE]
 - p: [17, 26, 45]
   k: '&uc 0x1ED3 0x1ED2'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [26, 45, 16]
   k: '&uc 0x1ED1 0x1ED0'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [26, 45, 15]
   k: '&uc 0x1ED9 0x1ED8'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [26, 45, 3]
   k: '&uc 0x1ED7 0x1ED6'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [26, 45, 32]
   k: '&uc 0x1ED5 0x1ED4'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
+- p: [14, 44]
+  k: '&uc 0x0103 0x0102'
+  l: [COLEMAK-VIE]
 - p: [23, 14, 44]
   k: '&uc 0x1EB1 0x1EB0'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [24, 14, 44]
   k: '&uc 0x1EAF 0x1EAE'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [25, 14, 44]
   k: '&uc 0x1EB7 0x1EB6'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [9, 44, 14]
   k: '&uc 0x1EB5 0x1EB4'
-  l: [VIE-UNIQUE]
+  l: [COLEMAK-VIE]
 - p: [37, 14, 44]
   k: '&uc 0x1EB3 0x1EB2'
-  l: [VIE-UNIQUE]
-- p: [15, 16, 24, 25]
-  k: {t: COLEMAK-VIE, h: toggle}
-  l: [COLEMAK]
-- p: [15, 16, 24, 25]
-  k: {t: COLEMAK, h: toggle}
+  l: [COLEMAK-VIE]
