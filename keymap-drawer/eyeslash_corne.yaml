@@ -116,7 +116,7 @@ layers:
   - '&uc 0x00E2 0x00C2'
   - '&uc 0x01B0 0x01AF'
   - '&uc 0x01A1 0x01A0'
-  - '&uc 0 xu00F4 0 xu00D4'
+  - '&uc 0x00F4 0x00D4'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
