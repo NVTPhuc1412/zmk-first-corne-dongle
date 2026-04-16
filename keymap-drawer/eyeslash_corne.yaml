@@ -427,22 +427,22 @@ combos:
 - p: [32, 24, 45]
   k: '&uc 0x1EC3 0x1EC2'
   l: [COLEMAK-VIE]
-- p: [14, 44]
+- p: [44, 15]
   k: '&uc 0x00E2 0x00C2'
   l: [COLEMAK-VIE]
-- p: [14, 23, 44]
+- p: [23, 44, 15]
   k: '&uc 0x1EA7 0x1EA6'
   l: [COLEMAK-VIE]
-- p: [14, 24, 44]
+- p: [24, 44, 15]
   k: '&uc 0x1EA5 0x1EA4'
   l: [COLEMAK-VIE]
-- p: [14, 25, 44]
+- p: [25, 44, 15]
   k: '&uc 0x1EAD 0x1EAC'
   l: [COLEMAK-VIE]
-- p: [14, 44, 9]
+- p: [44, 9, 15]
   k: '&uc 0x1EAB 0x1EAA'
   l: [COLEMAK-VIE]
-- p: [14, 37, 44]
+- p: [37, 44, 15]
   k: '&uc 0x1EA9 0x1EA8'
   l: [COLEMAK-VIE]
 - p: [44, 16]
