@@ -158,70 +158,70 @@
 
         combo_u_huyen {
             timeout-ms = <50>;
-            key-positions = <10 17>;
+            key-positions = <17 9>;
             bindings = <&uc 0x00F9 0x00D9>;
             layers = <1>;
         };
 
         combo_u_sac {
             timeout-ms = <50>;
-            key-positions = <10 16>;
+            key-positions = <16 9>;
             bindings = <&uc 0x00FA 0x00DA>;
             layers = <1>;
         };
 
         combo_u_nang {
             timeout-ms = <50>;
-            key-positions = <10 15>;
+            key-positions = <15 9>;
             bindings = <&uc 0x1EE5 0x1EE4>;
             layers = <1>;
         };
 
         combo_u_nga {
             timeout-ms = <50>;
-            key-positions = <10 31>;
+            key-positions = <31 9>;
             bindings = <&uc 0x0169 0x0168>;
             layers = <1>;
         };
 
         combo_u_hoi {
             timeout-ms = <50>;
-            key-positions = <10 32>;
+            key-positions = <32 9>;
             bindings = <&uc 0x1EE7 0x1EE6>;
             layers = <1>;
         };
 
         combo_y_huyen {
             timeout-ms = <50>;
-            key-positions = <11 17>;
+            key-positions = <17 10>;
             bindings = <&uc 0x1EF3 0x1EF2>;
             layers = <1>;
         };
 
         combo_y_sac {
             timeout-ms = <50>;
-            key-positions = <11 16>;
+            key-positions = <16 10>;
             bindings = <&uc 0x00FD 0x00DD>;
             layers = <1>;
         };
 
         combo_y_nang {
             timeout-ms = <50>;
-            key-positions = <11 15>;
+            key-positions = <15 10>;
             bindings = <&uc 0x1EF5 0x1EF4>;
             layers = <1>;
         };
 
         combo_y_nga {
             timeout-ms = <50>;
-            key-positions = <11 31>;
+            key-positions = <31 10>;
             bindings = <&uc 0x1EF9 0x1EF8>;
             layers = <1>;
         };
 
         combo_y_hoi {
             timeout-ms = <50>;
-            key-positions = <11 32>;
+            key-positions = <32 10>;
             bindings = <&uc 0x1EF7 0x1EF6>;
             layers = <1>;
         };
@@ -583,10 +583,10 @@
         valt_layer {
             display-name = "VIE-UNIQUE";
             bindings = <
-&trans  &trans             &trans             &uc 0x00EA 0x00CA  &trans                 &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans             &trans             &uc 0x00EA 0x00CA  &trans             &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &uc 0x00E2 0x00C2  &uc 0x01B0 0x01AF  &uc 0x01A1 0x01A0  &uc 0x00F4 0x00D4  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &uc 0x0103 0x0102  &trans             &trans             &uc 0x0111 0x0110      &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                              &trans             &trans                 &trans                                    &trans  &trans  &trans
+&trans  &uc 0x0103 0x0102  &trans             &trans             &uc 0x0111 0x0110  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                              &trans             &trans             &trans                                    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
