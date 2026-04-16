@@ -31,6 +31,6 @@ manifest:
       revision: main
     - name: zmk-unicode
       remote: urob
-      revision: v0.3.0
+      revision: v0.3
   self:
     path: config
