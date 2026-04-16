@@ -194,8 +194,6 @@
         combo_a_breve_nang  { timeout-ms = <50>; key-positions = <29 25>; bindings = <&uc 0x1EB7 0x1EB6>; layers = <2>; };
         combo_a_breve_nga   { timeout-ms = <50>; key-positions = <29 38>; bindings = <&uc 0x1EB5 0x1EB4>; layers = <2>; };
         combo_a_breve_hoi   { timeout-ms = <50>; key-positions = <29 37>; bindings = <&uc 0x1EB3 0x1EB2>; layers = <2>; };
-        
-        };
     };
 
     keymap {
