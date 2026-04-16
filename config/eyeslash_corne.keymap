@@ -411,42 +411,42 @@
 
         combo_a_circ {
             timeout-ms = <50>;
-            key-positions = <14 44>;
+            key-positions = <44 15>;
             bindings = <&uc 0x00E2 0x00C2>;
             layers = <1>;
         };
 
         combo_a_circ_huyen {
             timeout-ms = <50>;
-            key-positions = <14 23 44>;
+            key-positions = <23 44 15>;
             bindings = <&uc 0x1EA7 0x1EA6>;
             layers = <1>;
         };
 
         combo_a_circ_sac {
             timeout-ms = <50>;
-            key-positions = <14 24 44>;
+            key-positions = <24 44 15>;
             bindings = <&uc 0x1EA5 0x1EA4>;
             layers = <1>;
         };
 
         combo_a_circ_nang {
             timeout-ms = <50>;
-            key-positions = <14 25 44>;
+            key-positions = <25 44 15>;
             bindings = <&uc 0x1EAD 0x1EAC>;
             layers = <1>;
         };
 
         combo_a_circ_nga {
             timeout-ms = <50>;
-            key-positions = <14 44 9>;
+            key-positions = <44 9 15>;
             bindings = <&uc 0x1EAB 0x1EAA>;
             layers = <1>;
         };
 
         combo_a_circ_hoi {
             timeout-ms = <50>;
-            key-positions = <14 37 44>;
+            key-positions = <37 44 15>;
             bindings = <&uc 0x1EA9 0x1EA8>;
             layers = <1>;
         };
