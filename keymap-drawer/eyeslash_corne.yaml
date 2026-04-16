@@ -413,10 +413,10 @@ combos:
   k: '&uc 0x1ECF 0x1ECE'
   l: [COLEMAK-VIE]
 - p: [24, 44]
-  k: '&uc 0x1EC1 0x1EC0'
+  k: '&uc 0x00EA 0x00CA'
   l: [COLEMAK-VIE]
 - p: [24, 44, 17]
-  k: '&uc 0x00EA 0x00CA'
+  k: '&uc 0x1EC1 0x1EC0'
   l: [COLEMAK-VIE]
 - p: [24, 16, 44]
   k: '&uc 0x1EBF 0x1EBE'
