@@ -320,6 +320,9 @@ combos:
   k: '&uc UC_SET_LINUX'
   l: [COLEMAK-VIE]
 - p: [14, 23]
+  k: '&uc 0x0111 0x0110'
+  l: [COLEMAK-VIE]
+- p: [14, 23]
   k: '&uc 0x00E0 0x00C0'
   l: [COLEMAK-VIE]
 - p: [14, 24]
