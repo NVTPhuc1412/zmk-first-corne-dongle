@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors/naginata.dtsi>
+#include <behaviors/unicode.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -27,6 +28,8 @@
     trigger-period-ms = <16>;
 };
 
+&uc { default-mode = <UC_MODE_WIN_COMPOSE>; };
+
 / {
     macros {
         ng_on: ng_on {
@@ -34,7 +37,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 2>,
+                <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 3>,
                 <&macro_press>,
                 <&kp LCTRL &kp LSHIFT>,
                 <&macro_tap>,
@@ -104,12 +107,6 @@
     combos {
         compatible = "zmk,combos";
 
-        qwerty_tog {
-            bindings = <&tog 1>;
-            key-positions = <43 44 45 46>;
-            layers = <0 1>;
-        };
-
         combo_ng_on {
             timeout-ms = <300>;
             key-positions = <16 17 23 24>; // H, Jのキー位置に書き換えてください
@@ -121,7 +118,512 @@
             timeout-ms = <300>;
             key-positions = <23 24 17 16>; // F, Gのキー位置に書き換えてください
             bindings = <&ng_off>;
-            layers = <2>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
+            layers = <3>; // デフォルトレイヤーが0、薙刀式レイヤーが1の前提
+        };
+
+        on_vie {
+            bindings = <&to 1>;
+            key-positions = <15 16 24 25>;
+            layers = <0>;
+        };
+
+        off_vie {
+            bindings = <&to 0>;
+            key-positions = <15 16 24 25>;
+            layers = <1>;
+        };
+
+        to_win_compose {
+            bindings = <&uc UC_SET_WIN_COMPOSE>;
+            key-positions = <41 40 0>;
+            layers = <1>;
+        };
+
+        to_win_alt {
+            bindings = <&uc UC_SET_WIN_ALT>;
+            key-positions = <41 40 1>;
+            layers = <1>;
+        };
+
+        to_mac {
+            bindings = <&uc UC_SET_MACOS>;
+            key-positions = <41 40 2>;
+            layers = <1>;
+        };
+
+        to_linux {
+            bindings = <&uc UC_SET_LINUX>;
+            key-positions = <41 40 3>;
+            layers = <1>;
+        };
+
+        combo_dd {
+            timeout-ms = <40>;
+            key-positions = <32 44>;
+            bindings = <&uc 0x0111 0x0110>;
+            layers = <1>;
+        };
+
+        combo_a_huyen {
+            timeout-ms = <40>;
+            key-positions = <14 23>;
+            bindings = <&uc 0x00E0 0x00C0>;
+            layers = <1>;
+        };
+
+        combo_a_sac {
+            timeout-ms = <40>;
+            key-positions = <14 24>;
+            bindings = <&uc 0x00E1 0x00C1>;
+            layers = <1>;
+        };
+
+        combo_a_nang {
+            timeout-ms = <40>;
+            key-positions = <14 25>;
+            bindings = <&uc 0x1EA1 0x1EA0>;
+            layers = <1>;
+        };
+
+        combo_a_nga {
+            timeout-ms = <40>;
+            key-positions = <14 9>;
+            bindings = <&uc 0x00E3 0x00C3>;
+            layers = <1>;
+        };
+
+        combo_a_hoi {
+            timeout-ms = <40>;
+            key-positions = <14 37>;
+            bindings = <&uc 0x1EA3 0x1EA2>;
+            layers = <1>;
+        };
+
+        combo_u_huyen {
+            timeout-ms = <40>;
+            key-positions = <17 9>;
+            bindings = <&uc 0x00F9 0x00D9>;
+            layers = <1>;
+        };
+
+        combo_u_sac {
+            timeout-ms = <40>;
+            key-positions = <16 9>;
+            bindings = <&uc 0x00FA 0x00DA>;
+            layers = <1>;
+        };
+
+        combo_u_nang {
+            timeout-ms = <40>;
+            key-positions = <15 9>;
+            bindings = <&uc 0x1EE5 0x1EE4>;
+            layers = <1>;
+        };
+
+        combo_u_nga {
+            timeout-ms = <40>;
+            key-positions = <9 3>;
+            bindings = <&uc 0x0169 0x0168>;
+            layers = <1>;
+        };
+
+        combo_u_hoi {
+            timeout-ms = <40>;
+            key-positions = <32 9>;
+            bindings = <&uc 0x1EE7 0x1EE6>;
+            layers = <1>;
+        };
+
+        combo_y_huyen {
+            timeout-ms = <40>;
+            key-positions = <17 10>;
+            bindings = <&uc 0x1EF3 0x1EF2>;
+            layers = <1>;
+        };
+
+        combo_y_sac {
+            timeout-ms = <40>;
+            key-positions = <16 10>;
+            bindings = <&uc 0x00FD 0x00DD>;
+            layers = <1>;
+        };
+
+        combo_y_nang {
+            timeout-ms = <40>;
+            key-positions = <15 10>;
+            bindings = <&uc 0x1EF5 0x1EF4>;
+            layers = <1>;
+        };
+
+        combo_y_nga {
+            timeout-ms = <40>;
+            key-positions = <10 3>;
+            bindings = <&uc 0x1EF9 0x1EF8>;
+            layers = <1>;
+        };
+
+        combo_y_hoi {
+            timeout-ms = <40>;
+            key-positions = <32 10>;
+            bindings = <&uc 0x1EF7 0x1EF6>;
+            layers = <1>;
+        };
+
+        combo_e_huyen {
+            timeout-ms = <40>;
+            key-positions = <24 17>;
+            bindings = <&uc 0x00E8 0x00C8>;
+            layers = <1>;
+        };
+
+        combo_e_sac {
+            timeout-ms = <40>;
+            key-positions = <24 16>;
+            bindings = <&uc 0x00E9 0x00C9>;
+            layers = <1>;
+        };
+
+        combo_e_nang {
+            timeout-ms = <40>;
+            key-positions = <24 15>;
+            bindings = <&uc 0x1EB9 0x1EB8>;
+            layers = <1>;
+        };
+
+        combo_e_nga {
+            timeout-ms = <40>;
+            key-positions = <24 3>;
+            bindings = <&uc 0x1EBD 0x1EBC>;
+            layers = <1>;
+        };
+
+        combo_e_hoi {
+            timeout-ms = <40>;
+            key-positions = <24 32>;
+            bindings = <&uc 0x1EBB 0x1EBA>;
+            layers = <1>;
+        };
+
+        combo_i_huyen {
+            timeout-ms = <40>;
+            key-positions = <25 17>;
+            bindings = <&uc 0x00EC 0x00CC>;
+            layers = <1>;
+        };
+
+        combo_i_sac {
+            timeout-ms = <40>;
+            key-positions = <25 16>;
+            bindings = <&uc 0x00ED 0x00CD>;
+            layers = <1>;
+        };
+
+        combo_i_nang {
+            timeout-ms = <40>;
+            key-positions = <25 15>;
+            bindings = <&uc 0x1ECB 0x1ECA>;
+            layers = <1>;
+        };
+
+        combo_i_nga {
+            timeout-ms = <40>;
+            key-positions = <25 3>;
+            bindings = <&uc 0x0129 0x0128>;
+            layers = <1>;
+        };
+
+        combo_i_hoi {
+            timeout-ms = <40>;
+            key-positions = <25 32>;
+            bindings = <&uc 0x1EC9 0x1EC8>;
+            layers = <1>;
+        };
+
+        combo_o_huyen {
+            timeout-ms = <40>;
+            key-positions = <26 17>;
+            bindings = <&uc 0x00F2 0x00D2>;
+            layers = <1>;
+        };
+
+        combo_o_sac {
+            timeout-ms = <40>;
+            key-positions = <26 16>;
+            bindings = <&uc 0x00F3 0x00D3>;
+            layers = <1>;
+        };
+
+        combo_o_nang {
+            timeout-ms = <40>;
+            key-positions = <26 15>;
+            bindings = <&uc 0x1ECD 0x1ECC>;
+            layers = <1>;
+        };
+
+        combo_o_nga {
+            timeout-ms = <40>;
+            key-positions = <26 3>;
+            bindings = <&uc 0x00F5 0x00D5>;
+            layers = <1>;
+        };
+
+        combo_o_hoi {
+            timeout-ms = <40>;
+            key-positions = <26 32>;
+            bindings = <&uc 0x1ECF 0x1ECE>;
+            layers = <1>;
+        };
+
+        combo_e_circ {
+            timeout-ms = <40>;
+            key-positions = <24 44>;
+            bindings = <&uc 0x00EA 0x00CA>;
+            layers = <1>;
+        };
+
+        combo_e_circ_huyen {
+            timeout-ms = <50>;
+            key-positions = <24 44 17>;
+            bindings = <&uc 0x1EC1 0x1EC0>;
+            layers = <1>;
+        };
+
+        combo_e_circ_sac {
+            timeout-ms = <50>;
+            key-positions = <24 16 44>;
+            bindings = <&uc 0x1EBF 0x1EBE>;
+            layers = <1>;
+        };
+
+        combo_e_circ_nang {
+            timeout-ms = <50>;
+            key-positions = <15 24 44>;
+            bindings = <&uc 0x1EC7 0x1EC6>;
+            layers = <1>;
+        };
+
+        combo_e_circ_nga {
+            timeout-ms = <50>;
+            key-positions = <3 24 44>;
+            bindings = <&uc 0x1EC5 0x1EC4>;
+            layers = <1>;
+        };
+
+        combo_e_circ_hoi {
+            timeout-ms = <50>;
+            key-positions = <32 24 44>;
+            bindings = <&uc 0x1EC3 0x1EC2>;
+            layers = <1>;
+        };
+
+        combo_a_circ {
+            timeout-ms = <40>;
+            key-positions = <44 14>;
+            bindings = <&uc 0x00E2 0x00C2>;
+            layers = <1>;
+        };
+
+        combo_a_circ_huyen {
+            timeout-ms = <50>;
+            key-positions = <23 44 14>;
+            bindings = <&uc 0x1EA7 0x1EA6>;
+            layers = <1>;
+        };
+
+        combo_a_circ_sac {
+            timeout-ms = <50>;
+            key-positions = <24 44 14>;
+            bindings = <&uc 0x1EA5 0x1EA4>;
+            layers = <1>;
+        };
+
+        combo_a_circ_nang {
+            timeout-ms = <50>;
+            key-positions = <25 44 14>;
+            bindings = <&uc 0x1EAD 0x1EAC>;
+            layers = <1>;
+        };
+
+        combo_a_circ_nga {
+            timeout-ms = <50>;
+            key-positions = <9 44 14>;
+            bindings = <&uc 0x1EAB 0x1EAA>;
+            layers = <1>;
+        };
+
+        combo_a_circ_hoi {
+            timeout-ms = <50>;
+            key-positions = <37 44 14>;
+            bindings = <&uc 0x1EA9 0x1EA8>;
+            layers = <1>;
+        };
+
+        combo_u_horn {
+            timeout-ms = <40>;
+            key-positions = <44 9>;
+            bindings = <&uc 0x01B0 0x01AF>;
+            layers = <1>;
+        };
+
+        combo_u_horn_huyen {
+            timeout-ms = <50>;
+            key-positions = <44 17 9>;
+            bindings = <&uc 0x1EEB 0x1EEA>;
+            layers = <1>;
+        };
+
+        combo_u_horn_sac {
+            timeout-ms = <50>;
+            key-positions = <44 16 9>;
+            bindings = <&uc 0x1EE9 0x1EE8>;
+            layers = <1>;
+        };
+
+        combo_u_horn_nang {
+            timeout-ms = <50>;
+            key-positions = <45 44 15 9>;
+            bindings = <&uc 0x1EF1 0x1EF0>;
+            layers = <1>;
+        };
+
+        combo_u_horn_nga {
+            timeout-ms = <50>;
+            key-positions = <44 3 9>;
+            bindings = <&uc 0x1EEF 0x1EEE>;
+            layers = <1>;
+        };
+
+        combo_u_horn_hoi {
+            timeout-ms = <50>;
+            key-positions = <44 32 9>;
+            bindings = <&uc 0x1EED 0x1EEC>;
+            layers = <1>;
+        };
+
+        combo_o_horn {
+            timeout-ms = <40>;
+            key-positions = <44 10>;
+            bindings = <&uc 0x01A1 0x01A0>;
+            layers = <1>;
+        };
+
+        combo_o_horn_huyen {
+            timeout-ms = <50>;
+            key-positions = <17 44 10>;
+            bindings = <&uc 0x1EDD 0x1EDC>;
+            layers = <1>;
+        };
+
+        combo_o_horn_sac {
+            timeout-ms = <50>;
+            key-positions = <44 16 10>;
+            bindings = <&uc 0x1EDB 0x1EDA>;
+            layers = <1>;
+        };
+
+        combo_o_horn_nang {
+            timeout-ms = <50>;
+            key-positions = <44 15 10>;
+            bindings = <&uc 0x1EE3 0x1EE2>;
+            layers = <1>;
+        };
+
+        combo_o_horn_nga {
+            timeout-ms = <50>;
+            key-positions = <44 3 10>;
+            bindings = <&uc 0x1EE1 0x1EE0>;
+            layers = <1>;
+        };
+
+        combo_o_horn_hoi {
+            timeout-ms = <50>;
+            key-positions = <44 32 10>;
+            bindings = <&uc 0x1EDF 0x1EDE>;
+            layers = <1>;
+        };
+
+        combo_o_circ {
+            timeout-ms = <40>;
+            key-positions = <26 44>;
+            bindings = <&uc 0x00F4 0x00D4>;
+            layers = <1>;
+        };
+
+        combo_o_circ_huyen {
+            timeout-ms = <50>;
+            key-positions = <17 26 44>;
+            bindings = <&uc 0x1ED3 0x1ED2>;
+            layers = <1>;
+        };
+
+        combo_o_circ_sac {
+            timeout-ms = <50>;
+            key-positions = <26 16 44>;
+            bindings = <&uc 0x1ED1 0x1ED0>;
+            layers = <1>;
+        };
+
+        combo_o_circ_nang {
+            timeout-ms = <50>;
+            key-positions = <26 15 44>;
+            bindings = <&uc 0x1ED9 0x1ED8>;
+            layers = <1>;
+        };
+
+        combo_o_circ_nga {
+            timeout-ms = <50>;
+            key-positions = <26 3 44>;
+            bindings = <&uc 0x1ED7 0x1ED6>;
+            layers = <1>;
+        };
+
+        combo_o_circ_hoi {
+            timeout-ms = <50>;
+            key-positions = <26 32 44>;
+            bindings = <&uc 0x1ED5 0x1ED4>;
+            layers = <1>;
+        };
+
+        combo_a_breve {
+            timeout-ms = <40>;
+            key-positions = <44 2>;
+            bindings = <&uc 0x0103 0x0102>;
+            layers = <1>;
+        };
+
+        combo_a_breve_huyen {
+            timeout-ms = <50>;
+            key-positions = <23 44 2>;
+            bindings = <&uc 0x1EB1 0x1EB0>;
+            layers = <1>;
+        };
+
+        combo_a_breve_sac {
+            timeout-ms = <50>;
+            key-positions = <24 44 2>;
+            bindings = <&uc 0x1EAF 0x1EAE>;
+            layers = <1>;
+        };
+
+        combo_a_breve_nang {
+            timeout-ms = <50>;
+            key-positions = <25 44 2>;
+            bindings = <&uc 0x1EB7 0x1EB6>;
+            layers = <1>;
+        };
+
+        combo_a_breve_nga {
+            timeout-ms = <50>;
+            key-positions = <9 44 2>;
+            bindings = <&uc 0x1EB5 0x1EB4>;
+            layers = <1>;
+        };
+
+        combo_a_breve_hoi {
+            timeout-ms = <50>;
+            key-positions = <37 44 2>;
+            bindings = <&uc 0x1EB3 0x1EB2>;
+            layers = <1>;
         };
     };
 
@@ -140,13 +642,13 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        qwerty_layer {
-            display-name = "QWERTY";
+        vie_layer {
+            display-name = "COLEMAK-VIE";
             bindings = <
-&trans  &kp Q  &kp W  &kp E   &kp R   &kp T                     &trans          &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D   &kp F   &kp G             &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &trans            &trans          &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J        &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
+&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N  &kp E         &kp I    &kp O          &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
+                         &kp LEFT_ALT  &mo 3  &lt 4 SPACE                                                &lt 5 ENTER  &td0   &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -155,10 +657,10 @@
         japanese_layer {
             display-name = "NAGINATA";
             bindings = <
-&trans            &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U   &ng I      &ng O    &ng P      &trans
-&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J   &ng K      &ng L    &ng SEMI   &kp INT_HENKAN
-&trans            &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M   &ng COMMA  &ng DOT  &ng SLASH  &trans
-                                &tog_ime  &mo 3  &ng SPACE                                                                 &ng ENTER  &trans  &trans
+&kp ESCAPE        &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U       &ng I         &ng O    &ng P      &kp BACKSPACE
+&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J       &ng K         &ng L    &ng SEMI   &kp INT_HENKAN
+&kp LCTRL         &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M       &ng COMMA     &ng DOT  &ng SLASH  &kp DEL
+                                &tog_ime  &mo 3  &ng SPACE                                                                 &ng ENTER  &kp LSHIFT  &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
