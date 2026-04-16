@@ -130,6 +130,31 @@
         off_vie {
             bindings = <&to 0>;
             key-positions = <15 16 24 25>;
+            layers = <1>;
+        };
+
+        to_win_compose {
+            bindings = <&uc UC_SET_WIN_COMPOSE>;
+            key-positions = <41 40 0>;
+            layers = <1>;
+        };
+
+        to_win_alt {
+            bindings = <&uc UC_SET_WIN_ALT>;
+            key-positions = <41 40 1>;
+            layers = <1>;
+        };
+
+        to_mac {
+            bindings = <&uc UC_SET_MACOS>;
+            key-positions = <41 40 2>;
+            layers = <1>;
+        };
+
+        to_linux {
+            bindings = <&uc UC_SET_LINUX>;
+            key-positions = <41 40 3>;
+            layers = <1>;
         };
 
         combo_a_huyen {
@@ -592,11 +617,6 @@
             key-positions = <37 14 44>;
             bindings = <&uc 0x1EB3 0x1EB2>;
             layers = <1>;
-        };
-
-        to_win_compose {
-            bindings = <&none>;
-            key-positions = <41 40 0>;
         };
     };
 
