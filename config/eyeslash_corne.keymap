@@ -593,6 +593,11 @@
             bindings = <&uc 0x1EB3 0x1EB2>;
             layers = <1>;
         };
+
+        to_win_compose {
+            bindings = <&none>;
+            key-positions = <41 40 0>;
+        };
     };
 
     keymap {
