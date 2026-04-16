@@ -584,7 +584,7 @@
             display-name = "VIE-UNIQUE";
             bindings = <
 &trans  &trans             &trans             &uc 0x00EA 0x00CA  &trans                 &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &uc 0x00E2 0x00C2  &uc 0x01B0 0x01AF  &uc 0x01A1 0x01A0  &uc 0 xu00F4 0 xu00D4  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &uc 0x00E2 0x00C2  &uc 0x01B0 0x01AF  &uc 0x01A1 0x01A0  &uc 0x00F4 0x00D4  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &uc 0x0103 0x0102  &trans             &trans             &uc 0x0111 0x0110      &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                               &trans             &trans                 &trans                                    &trans  &trans  &trans
             >;
