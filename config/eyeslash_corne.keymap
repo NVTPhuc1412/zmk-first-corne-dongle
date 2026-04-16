@@ -377,14 +377,14 @@
         combo_e_circ {
             timeout-ms = <40>;
             key-positions = <24 44>;
-            bindings = <&uc 0x1EC1 0x1EC0>;
+            bindings = <&uc 0x00EA 0x00CA>;
             layers = <1>;
         };
 
         combo_e_circ_huyen {
             timeout-ms = <50>;
             key-positions = <24 44 17>;
-            bindings = <&uc 0x00EA 0x00CA>;
+            bindings = <&uc 0x1EC1 0x1EC0>;
             layers = <1>;
         };
 
