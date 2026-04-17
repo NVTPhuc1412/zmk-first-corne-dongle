@@ -32,7 +32,7 @@
 
 / {
     macros {
-        ng_on: ng_on {
+        to_ng: ng_on {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -46,7 +46,7 @@
                 <&kp LCTRL &kp LSHIFT>;
         };
 
-        ng_off: ng_off {
+        to_colemak: ng_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -72,6 +72,22 @@
                 <&kp LEFT_ALT>;
 
             label = "TOG_IME";
+        };
+
+        to_vie: to_vie {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&to 1>,
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT>,
+                <&macro_tap>,
+                <&kp N0>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT>;
+
+            label = "TO_VIE";
         };
     };
 
@@ -110,19 +126,19 @@
         combo_ng_on {
             timeout-ms = <300>;
             key-positions = <42 43 46>;
-            bindings = <&ng_on>;
+            bindings = <&to_ng>;
             layers = <0 1>;
         };
 
         combo_to_eng {
             timeout-ms = <300>;
             key-positions = <43 42 45>;
-            bindings = <&ng_off>;
+            bindings = <&to_colemak>;
             layers = <2 1>;
         };
 
         combo_to_vie {
-            bindings = <&to 1>;
+            bindings = <&to_vie>;
             key-positions = <43 42 47>;
             layers = <0 2>;
         };
