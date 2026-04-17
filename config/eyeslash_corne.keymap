@@ -118,13 +118,13 @@
             timeout-ms = <300>;
             key-positions = <43 42 45>;
             bindings = <&ng_off>;
-            layers = <2>;
+            layers = <2 1>;
         };
 
         combo_to_vie {
             bindings = <&to 1>;
             key-positions = <43 42 47>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         to_win_compose {
