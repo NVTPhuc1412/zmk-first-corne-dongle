@@ -248,7 +248,7 @@ layers:
 combos:
 - p: [16, 17, 23, 24]
   k: '&ng_on'
-  l: [COLEMAK, NAGINATA]
+  l: [COLEMAK]
 - p: [23, 24, 17, 16]
   k: '&ng_off'
-  l: [NUM&SYMBOL]
+  l: [NAGINATA]
