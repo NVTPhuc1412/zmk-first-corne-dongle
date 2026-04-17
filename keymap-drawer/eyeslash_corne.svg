@@ -559,17 +559,14 @@ rect.held, rect.combo.held {
 <path d="M401,207 l-97,2" class="combo"/>
 <path d="M401,207 l275,2" class="combo"/>
 <rect rx="6" ry="6" x="387" y="194" width="28" height="26" class="combo"/>
-<text x="401" y="207" class="combo tap">&amp;ng_on</text>
+<text x="401" y="207" class="combo tap">&amp;to_ng</text>
 </g>
 <g class="combo combopos-1">
 <path d="M422,205 l-118,4" class="combo"/>
 <path d="M422,205 l-179,-2" class="combo"/>
 <path d="M422,205 l316,-2" class="combo"/>
 <rect rx="6" ry="6" x="408" y="192" width="28" height="26" class="combo"/>
-<text x="422" y="205" class="combo tap">
-<tspan x="422" dy="-0.6em" style="font-size: 86%">COLEMAK</tspan><tspan x="422" dy="1.2em" style="font-size: 86%">-VIE</tspan>
-</text>
-<text x="422" y="216" class="combo hold">toggle</text>
+<text x="422" y="205" class="combo tap"><tspan style="font-size: 86%">&amp;to_vie</tspan></text>
 </g>
 </g>
 </g>
@@ -834,14 +831,14 @@ rect.held, rect.combo.held {
 <path d="M401,207 l-97,2" class="combo"/>
 <path d="M401,207 l275,2" class="combo"/>
 <rect rx="6" ry="6" x="387" y="194" width="28" height="26" class="combo"/>
-<text x="401" y="207" class="combo tap">&amp;ng_on</text>
+<text x="401" y="207" class="combo tap">&amp;to_ng</text>
 </g>
 <g class="combo combopos-1">
 <path d="M380,212 l-76,-2" class="combo"/>
 <path d="M380,212 l-138,-8" class="combo"/>
 <path d="M380,212 l233,11" class="combo"/>
 <rect rx="6" ry="6" x="366" y="199" width="28" height="26" class="combo"/>
-<text x="380" y="212" class="combo tap"><tspan style="font-size: 86%">&amp;ng_off</tspan></text>
+<text x="380" y="212" class="combo tap"><tspan style="font-size: 60%">&amp;to_colem…</tspan></text>
 </g>
 <g class="combo combopos-2">
 <path d="M625,123 l308,35" class="combo"/>
@@ -1771,17 +1768,14 @@ rect.held, rect.combo.held {
 <path d="M380,212 l-138,-8" class="combo"/>
 <path d="M380,212 l233,11" class="combo"/>
 <rect rx="6" ry="6" x="366" y="199" width="28" height="26" class="combo"/>
-<text x="380" y="212" class="combo tap"><tspan style="font-size: 86%">&amp;ng_off</tspan></text>
+<text x="380" y="212" class="combo tap"><tspan style="font-size: 60%">&amp;to_colem…</tspan></text>
 </g>
 <g class="combo combopos-1">
 <path d="M422,205 l-118,4" class="combo"/>
 <path d="M422,205 l-179,-2" class="combo"/>
 <path d="M422,205 l316,-2" class="combo"/>
 <rect rx="6" ry="6" x="408" y="192" width="28" height="26" class="combo"/>
-<text x="422" y="205" class="combo tap">
-<tspan x="422" dy="-0.6em" style="font-size: 86%">COLEMAK</tspan><tspan x="422" dy="1.2em" style="font-size: 86%">-VIE</tspan>
-</text>
-<text x="422" y="216" class="combo hold">toggle</text>
+<text x="422" y="205" class="combo tap"><tspan style="font-size: 86%">&amp;to_vie</tspan></text>
 </g>
 </g>
 </g>

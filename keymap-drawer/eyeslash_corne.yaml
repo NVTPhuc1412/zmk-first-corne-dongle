@@ -296,13 +296,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [42, 43, 46]
-  k: '&ng_on'
+  k: '&to_ng'
   l: [COLEMAK, COLEMAK-VIE]
 - p: [43, 42, 45]
-  k: '&ng_off'
+  k: '&to_colemak'
   l: [NAGINATA, COLEMAK-VIE]
 - p: [43, 42, 47]
-  k: {t: COLEMAK-VIE, h: toggle}
+  k: '&to_vie'
   l: [COLEMAK, NAGINATA]
 - p: [41, 40, 0]
   k: '&uc UC_SET_WIN_COMPOSE'
