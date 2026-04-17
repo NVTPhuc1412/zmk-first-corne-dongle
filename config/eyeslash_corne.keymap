@@ -669,13 +669,13 @@
         raise_layer {
             display-name = "NUM&SYMBOL";
             bindings = <
-&kp GRAVE  &kp TILDE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERCENT                                 &mmv MOVE_UP                     &kp AT_SIGN  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH   &trans
-&trans     &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp CARET                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH     &kp MINUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp PIPE
-&trans     &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AMPERSAND  &mkp MCLK                    &mmv MOVE_DOWN                   &kp DOLLAR   &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS        &trans
-                                             &kp KP_NUMLOCK   &trans           &trans                                                                       &trans       &trans           &kp RIGHT_ALT
+&kp GRAVE  &kp TILDE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERCENT                                  &mmv MOVE_UP                     &kp AT_SIGN  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH   &trans
+&trans     &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp CARET                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH     &kp MINUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp PIPE
+&trans     &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AMPERSAND  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp DOLLAR   &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS        &trans
+                                             &kp KP_NUMLOCK   &trans           &trans                                                                        &trans       &trans           &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
