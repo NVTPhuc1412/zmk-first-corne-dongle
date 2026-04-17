@@ -300,10 +300,10 @@ combos:
   l: [COLEMAK, COLEMAK-VIE]
 - p: [43, 42, 45]
   k: '&ng_off'
-  l: [NAGINATA]
+  l: [NAGINATA, COLEMAK-VIE]
 - p: [43, 42, 47]
   k: {t: COLEMAK-VIE, h: toggle}
-  l: [COLEMAK]
+  l: [COLEMAK, NAGINATA]
 - p: [41, 40, 0]
   k: '&uc UC_SET_WIN_COMPOSE'
   l: [COLEMAK-VIE]
