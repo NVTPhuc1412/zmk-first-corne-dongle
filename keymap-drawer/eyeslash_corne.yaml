@@ -246,9 +246,9 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [16, 17, 23, 24]
+- p: [43, 42, 46]
   k: '&ng_on'
   l: [COLEMAK]
-- p: [23, 24, 17, 16]
+- p: [42, 43, 45]
   k: '&ng_off'
   l: [NAGINATA]

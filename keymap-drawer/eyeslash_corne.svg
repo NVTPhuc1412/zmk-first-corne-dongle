@@ -555,12 +555,11 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M490,87 l-275,-3" class="combo"/>
-<path d="M490,87 l-219,3" class="combo"/>
-<path d="M490,87 l219,3" class="combo"/>
-<path d="M490,87 l275,-3" class="combo"/>
-<rect rx="6" ry="6" x="476" y="74" width="28" height="26" class="combo"/>
-<text x="490" y="87" class="combo tap">&amp;ng_on</text>
+<path d="M401,207 l-97,2" class="combo"/>
+<path d="M401,207 l-159,-4" class="combo"/>
+<path d="M401,207 l275,2" class="combo"/>
+<rect rx="6" ry="6" x="387" y="194" width="28" height="26" class="combo"/>
+<text x="401" y="207" class="combo tap">&amp;ng_on</text>
 </g>
 </g>
 </g>
@@ -884,12 +883,11 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M490,87 l219,3" class="combo"/>
-<path d="M490,87 l275,-3" class="combo"/>
-<path d="M490,87 l-219,3" class="combo"/>
-<path d="M490,87 l-275,-3" class="combo"/>
-<rect rx="6" ry="6" x="476" y="74" width="28" height="26" class="combo"/>
-<text x="490" y="87" class="combo tap"><tspan style="font-size: 86%">&amp;ng_off</tspan></text>
+<path d="M380,212 l-138,-8" class="combo"/>
+<path d="M380,212 l-76,-2" class="combo"/>
+<path d="M380,212 l233,11" class="combo"/>
+<rect rx="6" ry="6" x="366" y="199" width="28" height="26" class="combo"/>
+<text x="380" y="212" class="combo tap"><tspan style="font-size: 86%">&amp;ng_off</tspan></text>
 </g>
 </g>
 </g>
