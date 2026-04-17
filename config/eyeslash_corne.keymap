@@ -106,14 +106,14 @@
 
         combo_ng_on {
             timeout-ms = <300>;
-            key-positions = <16 17 23 24>;
+            key-positions = <43 42 46>;
             bindings = <&ng_on>;
             layers = <0>;
         };
 
         combo_ng_off {
             timeout-ms = <300>;
-            key-positions = <23 24 17 16>;
+            key-positions = <42 43 45>;
             bindings = <&ng_off>;
             layers = <1>;
         };
