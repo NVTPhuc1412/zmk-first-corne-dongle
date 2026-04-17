@@ -182,7 +182,7 @@ layers:
   - KP 2
   - KP 3
   - '&'
-  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $
   - {t: '=', s: +}
