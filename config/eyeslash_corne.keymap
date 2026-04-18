@@ -643,10 +643,10 @@
         default_layer {
             display-name = "COLEMAK";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J  &kp L        &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
-&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M  &kp N        &kp E         &kp I    &kp O          &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K  &kp H        &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
-                         &kp LEFT_ALT  &mo 3  &lt 4 SPACE                                                &td0   &lt 5 ENTER  &kp LEFT_WIN
+&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J        &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
+&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N  &kp E         &kp I    &kp O          &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
+                         &kp LEFT_ALT  &mo 3  &lt 4 SPACE                                                &lt 5 ENTER  &td0   &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -655,10 +655,10 @@
         vie_layer {
             display-name = "COLEMAK-VIE";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J  &kp L        &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
-&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M  &kp N        &kp E         &kp I    &kp O          &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K  &kp H        &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
-                         &kp LEFT_ALT  &mo 3  &lt 4 SPACE                                                &td0   &lt 5 ENTER  &kp LEFT_WIN
+&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J        &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
+&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N  &kp E         &kp I    &kp O          &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
+                         &kp LEFT_ALT  &mo 3  &lt 4 SPACE                                                &lt 5 ENTER  &td0   &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
