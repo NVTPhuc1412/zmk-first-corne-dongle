@@ -142,7 +142,7 @@ layers:
   - '&ng SLASH'
   - $$mdi:backspace-reverse-outline$$
   - '&tog_ime'
-  - NUM&SYMBOL
+  - NAGINATA
   - '&ng SPACE'
   - '&ng ENTER'
   - $$mdi:apple-keyboard-shift$$
