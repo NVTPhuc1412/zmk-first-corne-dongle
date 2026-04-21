@@ -295,13 +295,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [42, 43, 46]
+- p: [42, 28, 47]
   k: '&to_ng'
   l: [COLEMAK, COLEMAK-VIE]
-- p: [43, 42, 45]
+- p: [42, 28, 47, 41]
   k: '&to_colemak'
   l: [NAGINATA, COLEMAK-VIE]
-- p: [43, 42, 47]
+- p: [42, 28, 41]
   k: '&to_vie'
   l: [COLEMAK, NAGINATA]
 - p: [41, 40, 0]

@@ -555,18 +555,18 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M401,207 l-159,-4" class="combo"/>
-<path d="M401,207 l-97,2" class="combo"/>
-<path d="M401,207 l275,2" class="combo"/>
-<rect rx="6" ry="6" x="387" y="194" width="28" height="26" class="combo"/>
-<text x="401" y="207" class="combo tap">&amp;to_ng</text>
+<path d="M336,189 l-93,12" class="combo"/>
+<path d="M336,189 l-289,-26" class="combo"/>
+<path d="M336,189 l401,13" class="combo"/>
+<rect rx="6" ry="6" x="322" y="176" width="28" height="26" class="combo"/>
+<text x="336" y="189" class="combo tap">&amp;to_ng</text>
 </g>
 <g class="combo combopos-1">
-<path d="M422,205 l-118,4" class="combo"/>
-<path d="M422,205 l-179,-2" class="combo"/>
-<path d="M422,205 l316,-2" class="combo"/>
-<rect rx="6" ry="6" x="408" y="192" width="28" height="26" class="combo"/>
-<text x="422" y="205" class="combo tap"><tspan style="font-size: 86%">&amp;to_vie</tspan></text>
+<path d="M401,175 l-159,25" class="combo"/>
+<path d="M401,175 l-355,-13" class="combo"/>
+<path d="M401,175 l532,-14" class="combo"/>
+<rect rx="6" ry="6" x="387" y="162" width="28" height="26" class="combo"/>
+<text x="401" y="175" class="combo tap"><tspan style="font-size: 86%">&amp;to_vie</tspan></text>
 </g>
 </g>
 </g>
@@ -827,18 +827,19 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M401,207 l-159,-4" class="combo"/>
-<path d="M401,207 l-97,2" class="combo"/>
-<path d="M401,207 l275,2" class="combo"/>
-<rect rx="6" ry="6" x="387" y="194" width="28" height="26" class="combo"/>
-<text x="401" y="207" class="combo tap">&amp;to_ng</text>
+<path d="M336,189 l-93,12" class="combo"/>
+<path d="M336,189 l-289,-26" class="combo"/>
+<path d="M336,189 l401,13" class="combo"/>
+<rect rx="6" ry="6" x="322" y="176" width="28" height="26" class="combo"/>
+<text x="336" y="189" class="combo tap">&amp;to_ng</text>
 </g>
 <g class="combo combopos-1">
-<path d="M380,212 l-76,-2" class="combo"/>
-<path d="M380,212 l-138,-8" class="combo"/>
-<path d="M380,212 l233,11" class="combo"/>
-<rect rx="6" ry="6" x="366" y="199" width="28" height="26" class="combo"/>
-<text x="380" y="212" class="combo tap"><tspan style="font-size: 60%">&amp;to_colem…</tspan></text>
+<path d="M490,182 l-247,20" class="combo"/>
+<path d="M490,182 l-443,-20" class="combo"/>
+<path d="M490,182 l247,20" class="combo"/>
+<path d="M490,182 l443,-20" class="combo"/>
+<rect rx="6" ry="6" x="476" y="169" width="28" height="26" class="combo"/>
+<text x="490" y="182" class="combo tap"><tspan style="font-size: 60%">&amp;to_colem…</tspan></text>
 </g>
 <g class="combo combopos-2">
 <path d="M625,123 l308,35" class="combo"/>
@@ -1763,18 +1764,19 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M380,212 l-76,-2" class="combo"/>
-<path d="M380,212 l-138,-8" class="combo"/>
-<path d="M380,212 l233,11" class="combo"/>
-<rect rx="6" ry="6" x="366" y="199" width="28" height="26" class="combo"/>
-<text x="380" y="212" class="combo tap"><tspan style="font-size: 60%">&amp;to_colem…</tspan></text>
+<path d="M490,182 l-247,20" class="combo"/>
+<path d="M490,182 l-443,-20" class="combo"/>
+<path d="M490,182 l247,20" class="combo"/>
+<path d="M490,182 l443,-20" class="combo"/>
+<rect rx="6" ry="6" x="476" y="169" width="28" height="26" class="combo"/>
+<text x="490" y="182" class="combo tap"><tspan style="font-size: 60%">&amp;to_colem…</tspan></text>
 </g>
 <g class="combo combopos-1">
-<path d="M422,205 l-118,4" class="combo"/>
-<path d="M422,205 l-179,-2" class="combo"/>
-<path d="M422,205 l316,-2" class="combo"/>
-<rect rx="6" ry="6" x="408" y="192" width="28" height="26" class="combo"/>
-<text x="422" y="205" class="combo tap"><tspan style="font-size: 86%">&amp;to_vie</tspan></text>
+<path d="M401,175 l-159,25" class="combo"/>
+<path d="M401,175 l-355,-13" class="combo"/>
+<path d="M401,175 l532,-14" class="combo"/>
+<rect rx="6" ry="6" x="387" y="162" width="28" height="26" class="combo"/>
+<text x="401" y="175" class="combo tap"><tspan style="font-size: 86%">&amp;to_vie</tspan></text>
 </g>
 </g>
 </g>
