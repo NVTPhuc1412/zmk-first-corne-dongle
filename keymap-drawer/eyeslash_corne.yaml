@@ -46,8 +46,57 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - NUM&SYMBOL
   - {t: '$$mdi:keyboard-space$$', h: NAVIGATION}
-  - '&td0'
   - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - '&td0'
+  - LEFT WIN
+  COLEMAK-VIE:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - $$mdi:arrow-up-bold$$
+  - J
+  - L
+  - U
+  - Y
+  - {t: ;, s: ':'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - A
+  - R
+  - S
+  - T
+  - G
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - M
+  - N
+  - E
+  - I
+  - O
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - $$mdi:volume-off$$
+  - $$mdi:arrow-down-bold$$
+  - K
+  - H
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-option$$
+  - NUM&SYMBOL
+  - {t: '$$mdi:keyboard-space$$', h: NAVIGATION}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - '&td0'
   - LEFT WIN
   NAGINATA:
   - $$mdi:keyboard-esc$$
@@ -93,7 +142,7 @@ layers:
   - '&ng SLASH'
   - $$mdi:backspace-reverse-outline$$
   - '&tog_ime'
-  - NUM&SYMBOL
+  - NAGINATA
   - '&ng SPACE'
   - '&ng ENTER'
   - $$mdi:apple-keyboard-shift$$
@@ -242,13 +291,229 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [43, 42, 46]
-  k: '&ng_on'
-  l: [COLEMAK]
-- p: [42, 43, 45]
-  k: '&ng_off'
-  l: [NAGINATA]
+- p: [42, 43, 46]
+  k: '&to_ng'
+  l: [COLEMAK, COLEMAK-VIE]
+- p: [43, 42, 45]
+  k: '&to_colemak'
+  l: [NAGINATA, COLEMAK-VIE]
+- p: [43, 42, 47]
+  k: '&to_vie'
+  l: [COLEMAK, NAGINATA]
+- p: [41, 40, 0]
+  k: '&uc UC_SET_WIN_COMPOSE'
+  l: [COLEMAK-VIE]
+- p: [41, 40, 1]
+  k: '&uc UC_SET_WIN_ALT'
+  l: [COLEMAK-VIE]
+- p: [41, 40, 2]
+  k: '&uc UC_SET_MACOS'
+  l: [COLEMAK-VIE]
+- p: [41, 40, 3]
+  k: '&uc UC_SET_LINUX'
+  l: [COLEMAK-VIE]
+- p: [32, 44]
+  k: '&uc 0x0111 0x0110'
+  l: [COLEMAK-VIE]
+- p: [14, 23]
+  k: '&uc 0x00E0 0x00C0'
+  l: [COLEMAK-VIE]
+- p: [14, 24]
+  k: '&uc 0x00E1 0x00C1'
+  l: [COLEMAK-VIE]
+- p: [14, 25]
+  k: '&uc 0x1EA1 0x1EA0'
+  l: [COLEMAK-VIE]
+- p: [14, 9]
+  k: '&uc 0x00E3 0x00C3'
+  l: [COLEMAK-VIE]
+- p: [14, 37]
+  k: '&uc 0x1EA3 0x1EA2'
+  l: [COLEMAK-VIE]
+- p: [17, 9]
+  k: '&uc 0x00F9 0x00D9'
+  l: [COLEMAK-VIE]
+- p: [16, 9]
+  k: '&uc 0x00FA 0x00DA'
+  l: [COLEMAK-VIE]
+- p: [15, 9]
+  k: '&uc 0x1EE5 0x1EE4'
+  l: [COLEMAK-VIE]
+- p: [9, 3]
+  k: '&uc 0x0169 0x0168'
+  l: [COLEMAK-VIE]
+- p: [32, 9]
+  k: '&uc 0x1EE7 0x1EE6'
+  l: [COLEMAK-VIE]
+- p: [17, 10]
+  k: '&uc 0x1EF3 0x1EF2'
+  l: [COLEMAK-VIE]
+- p: [16, 10]
+  k: '&uc 0x00FD 0x00DD'
+  l: [COLEMAK-VIE]
+- p: [15, 10]
+  k: '&uc 0x1EF5 0x1EF4'
+  l: [COLEMAK-VIE]
+- p: [10, 3]
+  k: '&uc 0x1EF9 0x1EF8'
+  l: [COLEMAK-VIE]
+- p: [32, 10]
+  k: '&uc 0x1EF7 0x1EF6'
+  l: [COLEMAK-VIE]
+- p: [24, 17]
+  k: '&uc 0x00E8 0x00C8'
+  l: [COLEMAK-VIE]
+- p: [24, 16]
+  k: '&uc 0x00E9 0x00C9'
+  l: [COLEMAK-VIE]
+- p: [24, 15]
+  k: '&uc 0x1EB9 0x1EB8'
+  l: [COLEMAK-VIE]
+- p: [24, 3]
+  k: '&uc 0x1EBD 0x1EBC'
+  l: [COLEMAK-VIE]
+- p: [24, 32]
+  k: '&uc 0x1EBB 0x1EBA'
+  l: [COLEMAK-VIE]
+- p: [25, 17]
+  k: '&uc 0x00EC 0x00CC'
+  l: [COLEMAK-VIE]
+- p: [25, 16]
+  k: '&uc 0x00ED 0x00CD'
+  l: [COLEMAK-VIE]
+- p: [25, 15]
+  k: '&uc 0x1ECB 0x1ECA'
+  l: [COLEMAK-VIE]
+- p: [25, 3]
+  k: '&uc 0x0129 0x0128'
+  l: [COLEMAK-VIE]
+- p: [25, 32]
+  k: '&uc 0x1EC9 0x1EC8'
+  l: [COLEMAK-VIE]
+- p: [26, 17]
+  k: '&uc 0x00F2 0x00D2'
+  l: [COLEMAK-VIE]
+- p: [26, 16]
+  k: '&uc 0x00F3 0x00D3'
+  l: [COLEMAK-VIE]
+- p: [26, 15]
+  k: '&uc 0x1ECD 0x1ECC'
+  l: [COLEMAK-VIE]
+- p: [26, 3]
+  k: '&uc 0x00F5 0x00D5'
+  l: [COLEMAK-VIE]
+- p: [26, 32]
+  k: '&uc 0x1ECF 0x1ECE'
+  l: [COLEMAK-VIE]
+- p: [44, 14]
+  k: '&uc 0x00E2 0x00C2'
+  l: [COLEMAK-VIE]
+- p: [23, 44, 14]
+  k: '&uc 0x1EA7 0x1EA6'
+  l: [COLEMAK-VIE]
+- p: [24, 44, 14]
+  k: '&uc 0x1EA5 0x1EA4'
+  l: [COLEMAK-VIE]
+- p: [25, 44, 14]
+  k: '&uc 0x1EAD 0x1EAC'
+  l: [COLEMAK-VIE]
+- p: [9, 44, 14]
+  k: '&uc 0x1EAB 0x1EAA'
+  l: [COLEMAK-VIE]
+- p: [37, 44, 14]
+  k: '&uc 0x1EA9 0x1EA8'
+  l: [COLEMAK-VIE]
+- p: [44, 2]
+  k: '&uc 0x0103 0x0102'
+  l: [COLEMAK-VIE]
+- p: [23, 44, 2]
+  k: '&uc 0x1EB1 0x1EB0'
+  l: [COLEMAK-VIE]
+- p: [24, 44, 2]
+  k: '&uc 0x1EAF 0x1EAE'
+  l: [COLEMAK-VIE]
+- p: [25, 44, 2]
+  k: '&uc 0x1EB7 0x1EB6'
+  l: [COLEMAK-VIE]
+- p: [9, 44, 2]
+  k: '&uc 0x1EB5 0x1EB4'
+  l: [COLEMAK-VIE]
+- p: [37, 44, 2]
+  k: '&uc 0x1EB3 0x1EB2'
+  l: [COLEMAK-VIE]
+- p: [44, 9]
+  k: '&uc 0x01B0 0x01AF'
+  l: [COLEMAK-VIE]
+- p: [44, 17, 9]
+  k: '&uc 0x1EEB 0x1EEA'
+  l: [COLEMAK-VIE]
+- p: [44, 16, 9]
+  k: '&uc 0x1EE9 0x1EE8'
+  l: [COLEMAK-VIE]
+- p: [44, 15, 9]
+  k: '&uc 0x1EF1 0x1EF0'
+  l: [COLEMAK-VIE]
+- p: [44, 3, 9]
+  k: '&uc 0x1EEF 0x1EEE'
+  l: [COLEMAK-VIE]
+- p: [44, 32, 9]
+  k: '&uc 0x1EED 0x1EEC'
+  l: [COLEMAK-VIE]
+- p: [24, 44]
+  k: '&uc 0x00EA 0x00CA'
+  l: [COLEMAK-VIE]
+- p: [24, 44, 17]
+  k: '&uc 0x1EC1 0x1EC0'
+  l: [COLEMAK-VIE]
+- p: [24, 16, 44]
+  k: '&uc 0x1EBF 0x1EBE'
+  l: [COLEMAK-VIE]
+- p: [15, 24, 44]
+  k: '&uc 0x1EC7 0x1EC6'
+  l: [COLEMAK-VIE]
+- p: [3, 24, 44]
+  k: '&uc 0x1EC5 0x1EC4'
+  l: [COLEMAK-VIE]
+- p: [32, 24, 44]
+  k: '&uc 0x1EC3 0x1EC2'
+  l: [COLEMAK-VIE]
+- p: [44, 10]
+  k: '&uc 0x01A1 0x01A0'
+  l: [COLEMAK-VIE]
+- p: [17, 44, 10]
+  k: '&uc 0x1EDD 0x1EDC'
+  l: [COLEMAK-VIE]
+- p: [44, 16, 10]
+  k: '&uc 0x1EDB 0x1EDA'
+  l: [COLEMAK-VIE]
+- p: [44, 15, 10]
+  k: '&uc 0x1EE3 0x1EE2'
+  l: [COLEMAK-VIE]
+- p: [44, 3, 10]
+  k: '&uc 0x1EE1 0x1EE0'
+  l: [COLEMAK-VIE]
+- p: [44, 32, 10]
+  k: '&uc 0x1EDF 0x1EDE'
+  l: [COLEMAK-VIE]
+- p: [26, 44]
+  k: '&uc 0x00F4 0x00D4'
+  l: [COLEMAK-VIE]
+- p: [17, 26, 44]
+  k: '&uc 0x1ED3 0x1ED2'
+  l: [COLEMAK-VIE]
+- p: [26, 16, 44]
+  k: '&uc 0x1ED1 0x1ED0'
+  l: [COLEMAK-VIE]
+- p: [26, 15, 44]
+  k: '&uc 0x1ED9 0x1ED8'
+  l: [COLEMAK-VIE]
+- p: [26, 3, 44]
+  k: '&uc 0x1ED7 0x1ED6'
+  l: [COLEMAK-VIE]
+- p: [26, 32, 44]
+  k: '&uc 0x1ED5 0x1ED4'
+  l: [COLEMAK-VIE]
