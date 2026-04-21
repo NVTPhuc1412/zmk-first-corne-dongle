@@ -122,21 +122,21 @@
 
         combo_ng_on {
             timeout-ms = <300>;
-            key-positions = <42 43 46>;
+            key-positions = <42 28 47>;
             bindings = <&to_ng>;
             layers = <0 1>;
         };
 
         combo_to_eng {
             timeout-ms = <300>;
-            key-positions = <43 42 45>;
+            key-positions = <42 28 47 41>;
             bindings = <&to_colemak>;
             layers = <2 1>;
         };
 
         combo_to_vie {
             bindings = <&to_vie>;
-            key-positions = <43 42 47>;
+            key-positions = <42 28 41>;
             layers = <0 2>;
         };
 
