@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/englmaxi
     - name: eswai                         
       url-base: https://github.com/eswai
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: hammerbeam-slideshow
       remote: gpeye
@@ -27,5 +29,8 @@ manifest:
     - name: zmk-naginata                   
       remote: eswai
       revision: main
+    - name: zmk-unicode
+      remote: urob
+      revision: v0.3
   self:
     path: config
