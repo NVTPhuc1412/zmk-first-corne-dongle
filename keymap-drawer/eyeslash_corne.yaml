@@ -108,12 +108,12 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '@'
   - '!'
-  - (
-  - )
-  - {t: \, s: '|'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - '*'
+  - '{'
+  - '}'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - KP 0
   - KP 4
   - KP 5
   - KP 6
@@ -123,12 +123,12 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '#'
   - {t: '-', s: _}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
   - _
-  - '|'
+  - (
+  - )
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 0
+  - KP NUMLOCK
   - KP 1
   - KP 2
   - KP 3
@@ -137,11 +137,11 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $
   - {t: '=', s: +}
-  - '{'
-  - '}'
   - +
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP NUMLOCK
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -149,19 +149,19 @@ layers:
   - $$mdi:apple-keyboard-option$$
   NAVIGATION:
   - {t: '$$mdi:transfer$$', type: trans}
-  - BT CLR ALL
+  - PRINTSCREEN
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
   - OUT BLE
   - BRI INC
-  - $$mdi:pan-up$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - '&mkp MB4'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB5'
   - SCROLLLOCK
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PAUSE BREAK
   - PG UP
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -170,25 +170,25 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
   - $$mdi:volume-high$$
-  - $$mdi:pan-down$$
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - PRINTSCREEN
-  - PAUSE BREAK
+  - $$mdi:pan-up$$
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - PG DN
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - INS
+  - $$mdi:backspace-reverse-outline$$
+  - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:brightness-7$$
-  - $$mdi:apple-keyboard-control$$
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - INS
+  - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
