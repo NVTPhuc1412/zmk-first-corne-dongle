@@ -36,11 +36,11 @@
                 <&macro_tap>,
                 <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 1>,
                 <&macro_press>,
-                <&kp LCTRL &kp LSHIFT>,
+                <&kp LALT &kp LSHIFT>,
                 <&macro_tap>,
                 <&kp NUMBER_1>,
                 <&macro_release>,
-                <&kp LCTRL &kp LSHIFT>;
+                <&kp LALT &kp LSHIFT>;
         };
 
         to_colemak: ng_off {
@@ -50,11 +50,11 @@
                 <&macro_tap>,
                 <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>,
                 <&macro_press>,
-                <&kp LCTRL &kp LSHIFT>,
+                <&kp LALT &kp LSHIFT>,
                 <&macro_tap>,
                 <&kp N0>,
                 <&macro_release>,
-                <&kp LCTRL &kp LSHIFT>;
+                <&kp LALT &kp LSHIFT>;
         };
 
         tog_ime: tog_ime {
