@@ -99,8 +99,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LEFT WIN
   NUM&SYMBOL:
-  - {t: '`', s: '~'}
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - KP NUMLOCK
   - KP 7
   - KP 8
   - KP 9
@@ -112,7 +112,7 @@ layers:
   - '{'
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - KP 0
   - KP 4
   - KP 5
@@ -128,12 +128,12 @@ layers:
   - )
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP NUMLOCK
+  - '~'
   - KP 1
   - KP 2
   - KP 3
   - '&'
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $
   - {t: '=', s: +}
@@ -148,35 +148,35 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   NAVIGATION:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
   - PRINTSCREEN
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - OUT BLE
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - BRI INC
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB5'
-  - SCROLLLOCK
+  - F1
+  - F2
+  - F3
+  - F4
   - {t: '$$mdi:transfer$$', type: trans}
   - PAUSE BREAK
   - PG UP
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - OUT USB
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
   - $$mdi:volume-high$$
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:pan-up$$
+  - F5
+  - F6
+  - F7
+  - F8
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - SCROLLLOCK
   - PG DN
   - {t: '$$mdi:backspace$$', type: backspace}
   - INS
@@ -185,10 +185,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:brightness-7$$
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - $$mdi:pan-down$$
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -202,43 +202,43 @@ layers:
   - RGB COLOR HSB(266,100,50)
   - RGB COLOR HSB(176,100,50)
   - RGB COLOR HSB(0,0,100)
-  - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&mkp MB4'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB5'
+  - PRINTSCREEN
+  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB SPI
   - RGB BRI
   - RGB EFF
   - RGB ON
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - F5
-  - F6
-  - F7
-  - F8
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-up$$
+  - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB SPD
   - RGB BRD
   - RGB EFR
   - RGB OFF
-  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - F9
-  - F10
-  - F11
-  - F12
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click-outline$$
+  - $$mdi:pan-down$$
+  - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
