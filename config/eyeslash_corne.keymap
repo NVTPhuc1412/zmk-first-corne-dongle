@@ -149,9 +149,9 @@
         raise_layer {
             display-name = "NUM&SYMBOL";
             bindings = <
-&trans     &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERCENT                              &mmv MOVE_UP                     &kp AT_SIGN  &kp EXCLAMATION  &kp ASTERISK    &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&kp GRAVE  &kp KP_N0       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp CARET                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH     &kp MINUS        &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans     &kp TILDE       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AMPERSAND  &trans                    &mmv MOVE_DOWN                   &kp DOLLAR   &kp EQUAL        &kp PLUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&trans     &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERCENT                              &mmv MOVE_UP                     &kp AT_SIGN  &kp EXCLAMATION  &kp ASTERISK   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&kp GRAVE  &kp KP_N0       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp CARET                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH     &kp MINUS        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans     &kp TILDE       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AMPERSAND  &trans                    &mmv MOVE_DOWN                   &kp DOLLAR   &kp UNDERSCORE   &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
                                             &trans           &trans           &trans                                                                    &trans       &trans           &kp RIGHT_ALT
             >;
 
