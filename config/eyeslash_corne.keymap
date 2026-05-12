@@ -70,6 +70,14 @@
 
             label = "TOG_IME";
         };
+
+        mo_nav: mo_nav {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&mo 4>, <&macro_release>, <&mo 4 &to 0>;
+
+            label = "MO_NAV";
+        };
     };
 
     sensors {
@@ -84,6 +92,16 @@
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        enter_nav: enter_nav {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ENTER_NAV";
+            bindings = <&mo_nav>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -125,10 +143,10 @@
         default_layer {
             display-name = "COLEMAK";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J        &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
-&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N  &kp E         &kp I    &kp O          &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
-                         &kp LEFT_ALT  &mo 2  &lt 3 SPACE                                                &lt 4 ENTER  &td0   &kp LEFT_WIN
+&kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J               &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
+&kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M               &kp N  &kp E         &kp I    &kp O          &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K               &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
+                         &kp LEFT_ALT  &mo 2  &lt 3 SPACE                                                &enter_nav 0 ENTER  &td0   &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -159,27 +177,39 @@
         };
 
         lower_layer {
-            display-name = "NAVIGATION";
+            display-name = "Fn";
             bindings = <
-&bootloader      &kp PRINTSCREEN  &kp HOME       &kp UP    &kp END    &sys_reset                                   &kp C_BRI_INC                   &bt BT_SEL 0  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&kp PAUSE_BREAK  &kp PG_UP        &kp LEFT       &kp DOWN  &kp RIGHT  &out OUT_TOG              &kp C_VOLUME_DOWN  &kp C_MUTE     &kp C_VOLUME_UP  &bt BT_SEL 1  &kp F5  &kp F6   &kp F7   &kp F8   &kp RCTRL
-&kp SCROLLLOCK   &kp PG_DN        &kp BACKSPACE  &kp INS   &kp DEL    &bt BT_CLR_ALL  &trans                       &kp C_BRI_DEC                   &bt BT_SEL 2  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-                                                 &trans    &trans     &trans                                                                       &trans        &trans  &trans
+&bootloader      &kp F1  &kp F2   &kp F3   &kp F4   &sys_reset                                   &kp C_BRI_INC                   &bt BT_SEL 0  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(360,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_COLOR_HSB(117,100,50)  &trans
+&kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8   &out OUT_TOG              &kp C_VOLUME_DOWN  &kp C_MUTE     &kp C_VOLUME_UP  &bt BT_SEL 1  &rgb_ug RGB_TOG                 &rgb_ug RGB_BRI                    &rgb_ug RGB_SPI                    &rgb_ug RGB_SAI                    &rgb_ug RGB_COLOR_HSB(279,100,50)
+&kp SCROLLLOCK   &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR_ALL  &trans                       &kp C_BRI_DEC                   &bt BT_SEL 2  &rgb_ug RGB_EFF                 &rgb_ug RGB_BRD                    &rgb_ug RGB_SPD                    &rgb_ug RGB_SAD                    &trans
+                                  &trans   &trans   &trans                                                                       &trans        &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         deep_layer {
-            display-name = "Fn";
+            display-name = "NAVIGATION";
             bindings = <
-&trans  &rgb_ug RGB_COLOR_HSB(117,100,50)  &rgb_ug RGB_COLOR_HSB(266,100,50)  &rgb_ug RGB_COLOR_HSB(176,100,50)  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans                    &trans          &sys_reset  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &kp PRINTSCREEN  &bootloader
-&trans  &rgb_ug RGB_SPI                    &rgb_ug RGB_BRI                    &rgb_ug RGB_EFF                    &rgb_ug RGB_ON                  &trans            &trans  &trans  &trans  &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP     &msc SCRL_LEFT
-&trans  &rgb_ug RGB_SPD                    &rgb_ug RGB_BRD                    &rgb_ug RGB_EFR                    &rgb_ug RGB_OFF                 &trans  &trans            &trans          &trans      &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc SCRL_DOWN   &msc SCRL_RIGHT
-                                                                              &trans                             &trans                          &trans                                    &trans      &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &sys_reset  &kp HOME  &kp UP    &kp END    &kp PRINTSCREEN  &bootloader
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP        &tog 5
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans      &kp BSPC  &kp INS   &kp DEL    &kp PG_DN        &trans
+                        &trans  &trans  &trans                                    &trans      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp U D>;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans           &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &tog 4
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &msc SCRL_LEFT   &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc SCRL_DOWN  &trans
+                        &trans  &trans  &trans                                    &trans           &trans          &trans
+            >;
+
+            label = "MOUSE";
+            sensor-bindings = <&inc_dec_kp A B>;
         };
     };
 };
