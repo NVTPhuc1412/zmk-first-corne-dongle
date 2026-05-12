@@ -189,6 +189,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
+
+            label = "COLEMAK*";
         };
 
         mouse_active_layer {
