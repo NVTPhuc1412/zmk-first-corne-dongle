@@ -191,10 +191,10 @@
         deep_layer {
             display-name = "NAVIGATION";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &sys_reset  &kp HOME  &kp UP    &kp END    &kp PRINTSCREEN  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP        &tog 5
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans      &kp BSPC  &kp INS   &kp DEL    &kp PG_DN        &trans
-                        &trans  &trans  &trans                                    &trans      &trans    &trans
+&trans  &trans  &trans  &trans  &trans          &trans                    &trans          &sys_reset  &kp HOME  &kp UP    &kp END    &kp PRINTSCREEN  &bootloader
+&trans  &trans  &trans  &trans  &trans          &trans            &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP        &tog 5
+&trans  &trans  &trans  &trans  &trans          &trans  &trans            &trans          &trans      &kp BSPC  &kp INS   &kp DEL    &kp PG_DN        &trans
+                        &trans  &kp LEFT_SHIFT  &trans                                    &trans      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp U D>;
