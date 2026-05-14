@@ -128,7 +128,7 @@
 &kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J        &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
 &kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N  &kp E         &kp I    &kp O          &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
-                         &kp LEFT_ALT  &mo 2  &lt 3 SPACE                                                &lt 4 ENTER  &td0   &kp LEFT_WIN
+                         &kp LEFT_ALT  &td0   &lt 3 SPACE                                                &lt 4 ENTER  &mo 2  &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -137,10 +137,10 @@
         japanese_layer {
             display-name = "NAGINATA";
             bindings = <
-&kp ESCAPE        &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U       &ng I         &ng O    &ng P      &kp BACKSPACE
-&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J       &ng K         &ng L    &ng SEMI   &kp INT_HENKAN
-&kp LCTRL         &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M       &ng COMMA     &ng DOT  &ng SLASH  &kp DEL
-                                &tog_ime  &mo 2  &ng SPACE                                                                 &ng ENTER  &kp LSHIFT  &kp LEFT_WIN
+&kp ESCAPE        &ng Q  &ng W  &ng E     &ng R  &ng T                                    &mmv MOVE_UP                     &ng Y      &ng U  &ng I         &ng O    &ng P      &kp BACKSPACE
+&kp INT_MUHENKAN  &ng A  &ng S  &ng D     &ng F  &ng G                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &ng H      &ng J  &ng K         &ng L    &ng SEMI   &kp INT_HENKAN
+&kp LCTRL         &ng Z  &ng X  &ng C     &ng V  &ng B      &kp C_MUTE                    &mmv MOVE_DOWN                   &ng N      &ng M  &ng COMMA     &ng DOT  &ng SLASH  &kp DEL
+                                &tog_ime  &td0   &ng SPACE                                                                 &ng ENTER  &mo 2  &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -149,10 +149,10 @@
         raise_layer {
             display-name = "NUM&SYMBOL";
             bindings = <
-&trans     &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERCENT                              &mmv MOVE_UP                     &kp AT_SIGN  &kp EXCLAMATION  &kp ASTERISK   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&kp GRAVE  &kp KP_N0       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp CARET                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH     &kp MINUS        &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans     &kp TILDE       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AMPERSAND  &trans                    &mmv MOVE_DOWN                   &kp DOLLAR   &kp UNDERSCORE   &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-                                            &trans           &trans           &trans                                                                    &trans       &trans           &kp RIGHT_ALT
+&trans     &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERCENT                              &mmv MOVE_UP                     &kp AT_SIGN  &kp EXCLAMATION  &kp ASTERISK  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&kp GRAVE  &kp KP_N0       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp CARET                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH     &kp MINUS        &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans     &kp TILDE       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp AMPERSAND  &trans                    &mmv MOVE_DOWN                   &kp DOLLAR   &kp UNDERSCORE   &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+                                            &trans           &trans           &trans                                                                    &trans       &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
