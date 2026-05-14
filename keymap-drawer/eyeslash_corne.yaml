@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-option$$
-  - NUM&SYMBOL
+  - '&td0'
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: NAVIGATION}
-  - '&td0'
+  - NUM&SYMBOL
   - LEFT WIN
   NAGINATA:
   - $$mdi:keyboard-esc$$
@@ -93,10 +93,10 @@ layers:
   - '&ng SLASH'
   - $$mdi:backspace-reverse-outline$$
   - '&tog_ime'
-  - NUM&SYMBOL
+  - '&td0'
   - '&ng SPACE'
   - '&ng ENTER'
-  - $$mdi:apple-keyboard-shift$$
+  - NUM&SYMBOL
   - LEFT WIN
   NUM&SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -142,11 +142,11 @@ layers:
   - {t: ']', s: '}'}
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-option$$
   Fn:
   - $$mdi:progress-download$$
   - F1
