@@ -198,7 +198,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   NAVIGATION:
   - {t: '$$mdi:transfer$$', type: trans}
-  - PRINTSCREEN
+  - {t: COLEMAK*, h: toggle}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -208,9 +208,9 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - PRINTSCREEN
+  - {t: COLEMAK*, h: toggle}
   - $$mdi:progress-download$$
-  - {t: COLEMAK*, h: toggle}
+  - PRINTSCREEN
   - PG UP
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -224,7 +224,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - PG UP
-  - {t: COLEMAK*, h: toggle}
+  - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - PG DN
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -296,19 +296,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB5'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB4'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB5'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: COLEMAK*, h: toggle}
+  - '&mkp MB4'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB5'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB4'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB5'
+  - {t: COLEMAK*, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -322,7 +322,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-up$$
-  - {t: COLEMAK*, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
   - $$mdi:mouse-right-click-outline$$
