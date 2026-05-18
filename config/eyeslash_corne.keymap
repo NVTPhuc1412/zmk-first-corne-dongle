@@ -173,10 +173,10 @@
         deep_layer {
             display-name = "NAVIGATION";
             bindings = <
-&trans  &kp PRINTSCREEN  &kp HOME  &kp UP    &kp END    &trans                    &trans          &sys_reset  &kp HOME  &kp UP    &kp END    &kp PRINTSCREEN  &bootloader
-&tog 5  &kp PG_UP        &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP        &tog 5
-&trans  &kp PG_DN        &kp BSPC  &kp INS   &kp DEL    &trans  &trans            &trans          &trans      &kp BSPC  &kp INS   &kp DEL    &kp PG_DN        &trans
-                                   &trans    &trans     &trans                                    &trans      &trans    &trans
+&trans           &tog 5     &kp HOME  &kp UP    &kp END    &trans                    &trans          &sys_reset  &kp HOME  &kp UP    &kp END    &tog 5     &bootloader
+&kp PRINTSCREEN  &kp PG_UP  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP  &kp PRINTSCREEN
+&trans           &kp PG_DN  &kp BSPC  &kp INS   &kp DEL    &trans  &trans            &trans          &trans      &kp BSPC  &kp INS   &kp DEL    &kp PG_DN  &trans
+                                      &trans    &trans     &trans                                    &trans      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp U D>;
@@ -195,8 +195,8 @@
 
         mouse_active_layer {
             bindings = <
-&trans  &trans          &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans                             &trans          &trans           &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans          &trans
-&tog 5  &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT             &trans  &trans  &trans  &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &tog 5
+&trans  &tog 5          &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans                             &trans          &trans           &mkp MB4        &mmv MOVE_UP    &mkp MB5         &tog 5          &trans
+&trans  &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT             &trans  &trans  &trans  &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &trans
 &trans  &msc SCRL_DOWN  &mkp RCLK       &mkp MCLK       &mkp LCLK        &msc SCRL_RIGHT  &trans            &trans          &msc SCRL_LEFT   &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc SCRL_DOWN  &trans
                                         &trans          &trans           &trans                                             &trans           &trans          &trans
             >;
