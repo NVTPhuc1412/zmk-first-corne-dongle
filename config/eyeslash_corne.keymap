@@ -161,7 +161,7 @@
         lower_layer {
             display-name = "Fn";
             bindings = <
-&bootloader     &kp F1  &kp F2   &kp F3   &kp F4   &sys_reset                                 &kp C_BRI_INC                   &bt BT_SEL 0  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(360,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_COLOR_HSB(117,100,50)  &bt BT_CLR_ALL
+&trans          &kp F1  &kp F2   &kp F3   &kp F4   &trans                                     &kp C_BRI_INC                   &bt BT_SEL 0  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(360,100,50)  &rgb_ug RGB_COLOR_HSB(237,100,50)  &rgb_ug RGB_COLOR_HSB(117,100,50)  &bt BT_CLR_ALL
 &kp SCROLLLOCK  &kp F5  &kp F6   &kp F7   &kp F8   &out OUT_TOG            &kp C_VOLUME_DOWN  &kp C_MUTE     &kp C_VOLUME_UP  &bt BT_SEL 1  &rgb_ug RGB_TOG                 &rgb_ug RGB_BRI                    &rgb_ug RGB_SPI                    &rgb_ug RGB_SAI                    &rgb_ug RGB_COLOR_HSB(279,100,50)
 &trans          &kp F9  &kp F10  &kp F11  &kp F12  &trans        &trans                       &kp C_BRI_DEC                   &bt BT_SEL 2  &rgb_ug RGB_EFF                 &rgb_ug RGB_BRD                    &rgb_ug RGB_SPD                    &rgb_ug RGB_SAD                    &kp RCTRL
                                  &trans   &trans   &trans                                                                     &trans        &kp RIGHT_SHIFT                 &kp RIGHT_ALT
@@ -173,10 +173,10 @@
         deep_layer {
             display-name = "NAVIGATION";
             bindings = <
-&trans           &tog 5     &kp HOME  &kp UP    &kp END    &trans                    &trans          &sys_reset  &kp HOME  &kp UP    &kp END    &tog 5     &bootloader
-&kp PRINTSCREEN  &kp PG_UP  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP  &kp PRINTSCREEN
-&trans           &kp PG_DN  &kp BSPC  &kp INS   &kp DEL    &trans  &trans            &trans          &trans      &kp BSPC  &kp INS   &kp DEL    &kp PG_DN  &trans
-                                      &trans    &trans     &trans                                    &trans      &trans    &trans
+&trans           &tog 5     &kp HOME  &kp UP    &kp END    &trans                    &trans          &trans  &kp HOME  &kp UP    &kp END    &tog 5     &trans
+&kp PRINTSCREEN  &kp PG_UP  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP  &kp PRINTSCREEN
+&trans           &kp PG_DN  &kp BSPC  &kp INS   &kp DEL    &trans  &trans            &trans          &trans  &kp BSPC  &kp INS   &kp DEL    &kp PG_DN  &trans
+                                      &trans    &trans     &trans                                    &trans  &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp U D>;
