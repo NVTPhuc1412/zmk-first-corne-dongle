@@ -173,10 +173,10 @@
         deep_layer {
             display-name = "NAVIGATION";
             bindings = <
-&trans  &trans           &kp HOME  &kp UP    &kp END    &trans                       &trans          &trans     &kp HOME   &kp UP         &kp END    &trans             &trans
-&tog 5  &kp PRINTSCREEN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP            &trans  &trans  &trans  &kp PG_UP  &kp LEFT   &kp DOWN       &kp RIGHT  &kp RIGHT_CONTROL  &tog 5
-&trans  &trans           &kp BSPC  &kp INS   &kp DEL    &kp PG_DN  &trans            &trans          &kp PG_DN  &kp BSPC   &kp INS        &kp DEL    &trans             &trans
-                                   &trans    &trans     &trans                                       &trans     &kp RSHFT  &kp RIGHT_ALT
+&trans  &trans           &kp HOME  &kp UP    &kp END    &trans                       &trans          &trans          &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans             &trans
+&tog 5  &kp ENTER        &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP            &trans  &trans  &trans  &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_CONTROL  &tog 5
+&trans  &kp PRINTSCREEN  &kp BSPC  &kp INS   &kp DEL    &kp PG_DN  &trans            &trans          &msc SCRL_DOWN  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans             &trans
+                                   &trans    &trans     &trans                                       &trans          &kp RSHFT       &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp U D>;
@@ -195,10 +195,10 @@
 
         mouse_active_layer {
             bindings = <
-&trans  &trans           &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans                            &trans          &trans          &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans           &trans
-&tog 5  &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP              &trans  &trans  &trans  &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_LEFT   &tog 5
-&trans  &msc SCRL_RIGHT  &mkp RCLK       &mkp MCLK       &mkp LCLK        &msc SCRL_DOWN  &trans            &trans          &msc SCRL_DOWN  &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc SCRL_RIGHT  &trans
-                                         &trans          &trans           &trans                                            &trans          &trans          &trans
+&trans  &trans           &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans                            &trans          &trans     &kp HOME  &kp UP    &kp END    &trans  &trans
+&tog 5  &msc SCRL_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP              &trans  &trans  &trans  &kp PG_UP  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &tog 5
+&trans  &msc SCRL_RIGHT  &mkp RCLK       &mkp MCLK       &mkp LCLK        &msc SCRL_DOWN  &trans            &trans          &kp PG_DN  &kp BSPC  &kp INS   &kp DEL    &trans  &trans
+                                         &trans          &trans           &trans                                            &trans     &trans    &trans
             >;
 
             label = "MOUSE";
