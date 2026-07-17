@@ -127,7 +127,7 @@
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp F         &kp P  &kp B                                &kp UP                &kp J        &kp L  &kp U         &kp Y    &kp SEMICOLON  &kp BACKSPACE
 &kp TAB    &kp A  &kp R  &kp S         &kp T  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N  &kp E         &kp I    &kp O          &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp DELETE
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D  &kp V        &kp C_MUTE              &kp DOWN              &kp K        &kp H  &kp COMMA     &kp DOT  &kp FSLH       &kp NON_US_BACKSLASH
                          &kp LEFT_ALT  &td0   &lt 4 SPACE                                                &lt 3 ENTER  &mo 2  &kp LEFT_WIN
             >;
 
@@ -201,17 +201,8 @@
                                          &trans          &trans           &trans                                            &trans     &trans    &trans
             >;
 
-            label = "MOUSE";
+            label = "NAVIGATION*";
             sensor-bindings = <&inc_dec_kp A B>;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
         };
     };
 
