@@ -149,9 +149,9 @@
         raise_layer {
             display-name = "NUM&SYMBOL";
             bindings = <
-&kp GRAVE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK  &kp EXCLAMATION  &kp PERCENT                            &mmv MOVE_UP                     &kp DOLLAR     &kp KP_N7        &kp KP_N8       &kp KP_N9  &kp PIPE       &trans
-&kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp MINUS        &kp AT_SIGN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH       &kp KP_N4        &kp KP_N5       &kp KP_N6  &kp KP_N0      &trans
-&trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS      &kp UNDERSCORE   &kp CARET    &trans                    &mmv MOVE_DOWN                   &kp AMPERSAND  &kp KP_NUMBER_1  &kp KP_N2       &kp KP_N3  &kp BACKSLASH  &trans
+&kp GRAVE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK  &kp EXCLAMATION  &kp PERCENT                            &mmv MOVE_UP                     &kp DOLLAR     &kp KP_N7        &kp KP_N8       &kp KP_N9  &kp PIPE   &trans
+&kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp MINUS        &kp AT_SIGN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp HASH       &kp KP_N4        &kp KP_N5       &kp KP_N6  &kp KP_N0  &trans
+&trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS      &kp UNDERSCORE   &kp CARET    &trans                    &mmv MOVE_DOWN                   &kp AMPERSAND  &kp KP_NUMBER_1  &kp KP_N2       &kp KP_N3  &trans     &trans
                                                         &trans        &trans           &trans                                                                  &trans         &trans           &kp KP_NUMLOCK
             >;
 
